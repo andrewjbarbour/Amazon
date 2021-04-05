@@ -1,0 +1,635 @@
+.Payment h1{
+    text-align: left;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+#checkout-header-image{
+    margin-left: 50px;
+}
+
+.Payment h2{
+    text-align: left;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #333;
+}
+
+.Payment section{
+    margin-top: -10px;
+}
+
+.Payment select:hover{
+    background: #e7e9ec;
+    cursor: pointer;
+}
+
+.Payment ol{
+    margin-left: -20px;
+    list-style: none;
+    counter-reset: paycode;
+}
+
+.Payment li{
+    counter-increment: paycode;
+    font: Amazon Ember, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333;
+}
+
+.Payment li:before{
+    margin-right: 10px;
+    content: counter(paycode) ".";
+    color: #888;
+}
+
+.Payment .payment-divider{
+    margin-left: 0;
+    display: block;
+    opacity: .25;
+    margin-top: 10px;
+    width: 856px;
+}
+
+.Payment .payment-divider-bottom{
+    margin-left: 0;
+    display: block;
+    opacity: .25;
+    margin-top: 50px;
+    width: 856px;
+}
+
+.payment-wrapper{
+    display: block;
+    margin-left: 50px;
+    margin-right: auto;
+    min-height: 281px;
+    font-family: Amazon Ember, Arial, sans-serif;
+    color: #333;
+    text-rendering: optimizeLegibility;
+}
+
+#payment-method-row1{
+    display: inline-block;
+}
+
+#payment-method-row1-left{
+    display: inline-block;
+    width: 644px;
+}
+
+
+#payment-id-required{
+    display: block;
+    color: #333;
+    line-height: 19px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#paycode-full-name-label{
+    display: block;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    font-weight: 700;
+    color: #333;
+    font-size: 13px;
+}
+
+#paycode-full-name{
+    height: 29px;
+    width: 161px;
+    outline: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    text-indent: 5px;
+}
+
+#paycode-full-name:hover{
+    outline: none;
+    border: 1px solid #c7511f;
+    border-radius: 3px;
+    box-shadow: 0 0 7px rgb(199 81 31 / 80%);
+}
+
+#date-of-birth-wrapper{
+    display: block;
+    margin-top: 8px;    
+  }
+ 
+  #date-of-birth-month{
+    margin-right: 10px;
+    width: 69px;
+  }
+ 
+  #date-of-birth-day{
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  #date-of-birth-year{
+    width: 69px;
+    overflow: hidden;
+  }
+ 
+ #date-of-birth-month, #date-of-birth-day, #date-of-birth-year {
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea) !important;
+  }
+ 
+  #date-of-birth-month, #date-of-birth-day, #date-of-birth-year{
+   height: 31px;
+   border: 1px solid #a6a6a6;
+   border-top-color: #949494;
+   border-radius: 3px;
+   font-family: Amazon Ember, Arial, sans-serif;
+   padding-left: 5px;
+   
+  }
+ 
+  #date-of-birth-wrapper select:focus, #date-of-birth-wrapper select:active{
+   outline: none;
+   border: 1px solid #c7511f;
+   border-radius: 3px;
+   box-shadow: 0 0 7px rgb(199 81 31 / 80%);
+ }
+ 
+  #date-of-birth-label {
+    display: block;
+    margin-top: 5px;
+    font-weight: 700;
+    color: #0F1111;
+ 
+  }
+
+  #paycode-current-residence{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #0F1111;
+  }
+
+  #current-residence-selector{
+    display: block;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #bcc1c8 #bababa #adb2bb;
+    cursor: pointer;
+    height: 31px;
+    line-height: 29px;
+    margin-bottom: 15px;
+    outline: none;
+    width: 166px;
+    text-align: center;
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea) !important;
+    color: #111;
+    font-size: 13px;
+    font-family: Amazon Ember, Arial;
+  }
+
+  #current-residence-selector:hover{
+    background: #e7e9ec;
+  }
+
+  .Payment #continue{
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 31px;
+    line-height: 19px;
+    margin-top: 30px;
+    width: 73px;
+    text-align: center;
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    border-color: #a88734 #9c7e31 #846a29;
+    border-style: solid;
+    border-width: 1px;
+    color: #111;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Amazon Ember, Arial;
+}
+
+#payment-method-row1-right{
+    display: inline-block;
+    width: 248px;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+#payment-method-hero-top{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    width: 856px;
+    height: 89px;
+}
+
+#payment-method-hero-inner-wrapper{
+    display: flex;
+    width: 815px;
+    height: 49px;
+    margin-top: 2%;
+    border-radius: 2px;
+    background-color: #fafafa;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #BBD3DE;
+}
+
+.info-image{
+    margin: 7px 10px;
+    display: flex;
+    background: url('./amazon-sprite-map.png') 0 0;
+    background-position: -350px -35px;
+    width: 30px;
+    height: 27px;
+}
+
+#payment-hero-text{
+    display: flex;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 17px;
+}
+
+#payment-method-continue-top{
+    display: inline-block;
+    margin-left: 20px;
+    width: 265px;
+    height: 109px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+ #payment-method-continue{
+    display: block !important;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 31px;
+    line-height: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 22px;
+    min-width: 225px !important;
+    text-align: center;
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    border-color: #a88734 #9c7e31 #846a29;
+    border-style: solid;
+    border-width: 1px;
+    color: #111;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Amazon Ember, Arial;
+    margin-bottom: 15px;
+
+}
+
+#payment-method-continue:hover{
+    background: linear-gradient(to bottom,#f7dfa5,#eeae0ddc);
+}
+
+#payment-continue-label{
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+#payment-method-row2{
+    display: flex;
+}
+
+#payment-method-row2-left{
+    width: 704px;
+    display: inline-block;
+}
+
+#payment-method-row2-right{
+    display: inline-block;
+    width: 188px;
+    margin-top: 20px;
+}
+
+#amazon-paycode{
+    float: right;
+    margin-right: 40px;
+    width: 96px;
+    height: 65px;
+}
+
+#payment-method-row3{
+    display: flex;
+}
+
+#payment-method-row3-left{
+    display: inline-block;
+    width: 644px;
+}
+
+#payment-method-row3-right{
+    display: inline-block;
+    width: 248px;
+    margin-top: 20px;
+}
+
+#amazon-gift-card{
+    float: right;
+    margin-right: 40px;
+}
+
+#payment-method-row4{
+    display: flex;
+}
+
+#payment-method-row4-left{
+    display: inline-block;
+    width: 644px;
+}
+
+#store-card-learn-more{
+    display: block;
+    font-size: 13px;
+    margin-top: 20px;
+    width: 80px;
+}
+
+#payment-method-row4-right{
+    display: inline-block;
+    width: 248px;
+    margin-top: 20px;
+}
+
+#amazon-store-card{
+    float: right;
+    margin-right: 40px;
+}
+
+#payment-method-row5{
+    display: flex;
+}
+
+#payment-method-row5-left{
+    display: inline-block;
+    width: 644px;
+}
+
+#personal-checking-learn-more{
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 5px;
+    width: 80px;
+}
+
+#payment-method-row5-right{
+    display: inline-block;
+    width: 248px;
+    margin-top: 20px;
+}
+
+#personal-checking-account{
+    float: right;
+    margin-right: 40px;
+}
+
+#payment-method-continue-bottom{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: -15px;
+    width: 265px;
+    height: 109px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.Payment h3{
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 17px;
+    line-height: 1.24;
+    margin-bottom: 0px;
+    
+}
+
+.Payment span{
+    font-size: 13px;
+}
+
+#add-card{
+    display: block;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #bcc1c8 #bababa #adb2bb;
+    cursor: pointer;
+    height: 31px;
+    line-height: 29px;
+    margin-top: 30px;
+    width: 166px;
+    text-align: center;
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea) !important;
+    color: #111;
+    font-size: 13px;
+    font-family: Amazon Ember, Arial;
+}
+
+#add-checking-account-button{
+    display: block;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #bcc1c8 #bababa #adb2bb;
+    cursor: pointer;
+    height: 31px;
+    line-height: 29px;
+    margin-top: 30px;
+    width: 215px;
+    text-align: center;
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea) !important;
+    color: #111;
+    font-size: 13px;
+    font-family: Amazon Ember, Arial;
+}
+
+#add-card:hover{
+    background: linear-gradient(to bottom,#f7dfa5,#eeae0ddc);
+}
+
+.Payment .wrap-collapsible{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.Payment #collapsible {
+    display: none;
+  }
+
+.Payment .lbl-toggle{
+    display: block;
+    cursor: pointer;
+    color: #007185;
+    
+}
+.Payment .lbl-toggle:hover{
+    text-decoration: underline;
+    text-decoration-color: #c7511f;
+    color: #c7511f;
+}
+
+.Payment .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+
+ .Payment .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-left: 5px solid #0f1111;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+  }
+
+.Payment .checkbox-wrapper{
+      display: flex;
+  }
+
+.Payment .toggle:checked + .lbl-toggle + .collapsible-content {
+    min-height: 400px;
+    margin-bottom: -10px;
+  }
+
+
+ .Payment .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+
+.Payment .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+.Payment .gift-card-wrap-collapsible{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.Payment #gift-card-collapsible {
+    display: none;
+  }
+
+.Payment .lbl-toggle{
+    display: block;
+    cursor: pointer;
+    color: #007185;
+    
+}
+.Payment .lbl-toggle:hover{
+    text-decoration: underline;
+    text-decoration-color: #c7511f;
+    color: #c7511f;
+}
+
+.Payment .gift-card-collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+
+ .Payment .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-left: 5px solid #0f1111;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+  }
+
+.Payment .checkbox-wrapper{
+      display: flex;
+  }
+
+.Payment .toggle:checked + .lbl-toggle + .gift-card-collapsible-content {
+    min-height: 440px;
+    margin-bottom: -10px;
+  }
+
+
+#payment-footer-nav-wrapper{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#payment-help{
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    font-family: Amazon Ember;
+    color: #555;
+    line-height: 1.465;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.Payment a{
+    color: #0066c0;
+}
+
+.Payment a:hover{
+    text-decoration: underline;
+    color: #c7511f;
+    text-decoration-color: #c7511f;
+    cursor: pointer;
+}
+
+#payment-footer{
+    height: 44px;
+    margin-top: 46px;
+    margin-bottom: -18px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    opacity: 1;
+    width: 100%;
+}
+
+.payment-footer-nav {
+    margin: 26px 10px 0px 10px;
+    font-size: 11px;
+    line-height: 1.465px;
+    color: #0066c0;
+}
+
+.payment-footer-nav:hover{
+    text-decoration: underline;
+    color: #c7511f;
+    text-decoration-color: #c7511f;
+    cursor: pointer;
+}
+
+#payment-amazon-copyright{
+    font-size: 11px;
+    font-family: Amazon Ember;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,1143 @@
+.FrontPage {
+  font-family: Amazon Ember, Arial, sans-serif;
+}
+
+#front-page-carousel {
+  margin-bottom: -5px;
+  overflow-x: hidden;
+}
+
+#left-hero-carousel-arrow {
+  position: absolute;
+  display: inline-block;
+  top: 25%;
+  width: 34px;
+  height: 52px;
+  background-size: 68px 52px;
+  background-image: url("./carousel-arrows.png");
+  cursor: pointer;
+}
+
+#right-hero-carousel-arrow {
+  position: absolute;
+  display: inline-block;
+  top: 25%;
+  left: 97.5%;
+  width: 34px;
+  height: 52px;
+  background-size: 68px 52px;
+  background-image: url("./carousel-arrows.png");
+  background-position: -34px 0px;
+  cursor: pointer;
+}
+
+#cardUI {
+  display: flex;
+  width: 1440px;
+  height: 4972px;
+  background-color: #e7e7e7;
+}
+
+#cardUI section > div {
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.four-row-card > div {
+  width: 335px;
+  height: 420px;
+}
+
+.four-image-card-container {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.fp-card-header {
+  font-size: 21px;
+  line-height: 27.3px;
+  margin-left: 20px;
+  font-weight: 700;
+  color: #0f1111;
+}
+
+.fp-card-link {
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: -10px;
+  color: #007185;
+  margin-left: 20px;
+}
+
+.fp-card-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #c7511f;
+  color: #c7511f;
+  cursor: pointer;
+}
+
+#row-1-card-1 {
+  width: 335px;
+  height: 420px;
+  margin-top: -350px;
+  position: absolute;
+  display: flex;
+}
+
+#fp-profile-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#fp-card-user-greeting {
+  display: inline-block;
+  width: 200px;
+  margin-left: 15px;
+}
+
+#user-greeting-header {
+  vertical-align: top;
+  margin-left: 0px;
+}
+
+#card-1-1-ui-body {
+  display: block;
+  margin-top: 30px;
+  margin-left: -70px;
+}
+
+#recent-order-text {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#recent-order-image {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#card-1-2-ui-body {
+  margin-left: 20px;
+}
+
+#card-1-1-image {
+  display: block;
+  max-width: 295px;
+  max-height: 304px;
+  width: auto;
+  height: auto;
+  margin-top: -5px;
+}
+
+#specials-header {
+  margin-left: 0px;
+}
+
+#see-your-orders-link {
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: 25px;
+  color: #007185;
+}
+
+#see-your-orders-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #c7511f;
+  color: #c7511f;
+  cursor: pointer;
+}
+
+#customer-since {
+  display: block;
+  margin-top: -20px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+#row-1-card-2 {
+  width: 335px;
+  height: 420px;
+  margin-top: -350px;
+  position: absolute;
+  margin-left: 26% !important;
+}
+
+#card-1-2-image {
+  margin-top: -9px;
+}
+
+#card-1-2-image:hover {
+  cursor: pointer;
+}
+
+#try-personal-shopper-link {
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: 17px;
+  color: #007185;
+}
+
+#try-personal-shopper-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #c7511f;
+  color: #c7511f;
+  cursor: pointer;
+}
+
+#row-1-card-3 {
+  width: 335px;
+  height: 420px;
+  margin-top: -350px;
+  margin-left: 50.5% !important;
+  position: absolute;
+}
+
+#card-1-3-ui-body {
+  margin-left: 20px;
+}
+
+.fp-deal {
+  display: block;
+  margin-left: 10px;
+}
+
+#deal-of-the-day-header {
+  margin-left: 0px;
+}
+
+.fp-deal-caption {
+  font-size: 21px;
+}
+
+.price-superscript {
+  position: relative;
+  font-size: 12px;
+  top: -0.5em;
+}
+
+.fp-deal-description {
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.fp-deal:hover {
+  cursor: pointer;
+}
+
+#see-all-deals-link {
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: 32px;
+  color: #007185;
+}
+
+#see-all-deals-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #c7511f;
+  color: #c7511f;
+  cursor: pointer;
+}
+
+#row-1-card-4 {
+  display: flex;
+  width: 335px;
+  height: 150px;
+  margin-top: -350px;
+  margin-left: 75% !important;
+  position: absolute;
+}
+
+#alexa-header {
+  display: inline-block;
+  width: 197px;
+  height: 81px;
+  margin-left: 20px;
+}
+
+#alexa-sprite {
+  display: inline-block;
+  width: 93.33px;
+  height: 93.33px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+#shop-ecobee-link {
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: -10px;
+  color: #007185;
+  margin-left: 20px;
+}
+
+#shop-ecobee-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #c7511f;
+  color: #c7511f;
+  cursor: pointer;
+}
+
+#front-page-ad {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  cursor: pointer;
+  margin-left: 1100px;
+  margin-top: -180px;
+}
+
+#card-UI-row2 {
+  margin-top: 100px;
+  display: flex;
+  height: 400px;
+}
+
+#fp-video-player-background {
+  width: 690px;
+  height: 420px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("./fp-video-player-background.svg");
+  cursor: pointer;
+}
+
+#row-2-card-1 {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+#fp-video-player {
+  width: 560px;
+  height: 420px;
+  position: absolute;
+  margin-left: -630px;
+  cursor: pointer;
+  filter: brightness(50%);
+}
+
+#video-player-overlay-header {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 27.3px;
+  color: #fff;
+  position: absolute;
+  margin-left: -670px;
+  margin-top: 15px;
+}
+
+.video-player-overlay-subheader {
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  margin-left: -670px;
+  margin-top: 45px;
+}
+
+#start-watching-subheader {
+  margin-top: 385px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#start-watching-subheader:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#row-2-card-2 {
+  display: inline-block;
+  margin-left: 18px !important;
+  width: 335px;
+  height: 420px;
+}
+
+#card-2-2-header {
+  display: block;
+  margin-left: 20px;
+}
+
+.prime-wardrobe-img {
+  width: 140px;
+  height: 116px;
+  cursor: pointer;
+}
+
+#prime-wardrobe-img-container {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.fp-image-label {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-right: 113px;
+  cursor: pointer;
+}
+
+#prime-wardrobe-img-1,
+#prime-wardrobe-img-3 {
+  margin-right: 15px;
+}
+
+#fp-image-label-4 {
+  display: inline-block;
+  margin-left: 17px;
+}
+
+#row-2-card-3 {
+  width: 335px;
+  height: 420px;
+  margin-left: 18px !important;
+  display: inline-block;
+}
+
+#prime-wardrobe-link {
+  margin-top: 5px;
+}
+
+#amazon-handmade-img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#amazon-handmade-link {
+  margin-top: 16px;
+}
+
+.full-row-card {
+  display: flex;
+  position: absolute;
+  width: 97%;
+  height: 285px;
+  background: #fff;
+  margin-left: 20px;
+}
+
+#card-UI-row3 {
+  margin-top: 550px;
+}
+
+#row-3-card {
+  text-rendering: optimizeLegibility;
+  display: block;
+}
+
+#row-3-card-header {
+  display: inline-block;
+  color: #444;
+  font-weight: 400;
+  margin-left: 0px;
+}
+
+#row-3-card-header-link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 35px;
+  margin-left: 10px;
+}
+
+.related-item-img {
+  cursor: pointer;
+  margin-right: 16px;
+  margin-top: -5px;
+}
+
+#rel-item-carousel {
+  display: flex;
+  align-items: center;
+}
+
+.rel-item-carousel-button {
+  position: absolute;
+  display: flex;
+  background: #fff;
+  width: 45px;
+  height: 100px;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 1px 3px #888;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#left-rel-item-carousel-arrow {
+  position: absolute;
+  width: 13px;
+  height: 22px;
+  background-size: 132px 235px;
+  background-image: url("./feed-gui-sprites.png");
+  background-position: -14px 0px;
+}
+
+#left-rel-item-carousel-button {
+  margin-top: 40px;
+  clip: rect(-10px, 55px, 110px, 0);
+}
+
+#right-rel-item-carousel-button {
+  margin-left: 94%;
+  margin-top: -158px;
+  clip: rect(-10px, 45px, 110px, -10px);
+}
+
+#right-rel-item-carousel-arrow {
+  position: absolute;
+  width: 13px;
+  height: 22px;
+  background-size: 132px 235px;
+  background-image: url("./feed-gui-sprites.png");
+  background-position: 0px 0px;
+  cursor: pointer;
+}
+
+#card-UI-row4 {
+  margin-top: 855px;
+}
+
+#row-4-card-header {
+  display: inline-block;
+  color: #444;
+  font-weight: 400;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.inspired-item-img {
+  cursor: pointer;
+  margin-right: 16px;
+  margin-top: -5px;
+  height: 220px;
+  max-width: 160px;
+}
+
+#inspired-item-carousel {
+  display: flex;
+  align-items: center;
+}
+
+.inspired-item-carousel-button {
+  position: absolute;
+  display: flex;
+  background: #fff;
+  width: 45px;
+  height: 100px;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 1px 3px #888;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#left-inspired-item-carousel-arrow {
+  position: absolute;
+  width: 13px;
+  height: 22px;
+  background-size: 132px 235px;
+  background-image: url("./feed-gui-sprites.png");
+  background-position: -14px 0px;
+}
+
+#left-inspired-item-carousel-button {
+  margin-top: 40px;
+  clip: rect(-10px, 55px, 110px, 0);
+}
+
+#right-inspired-item-carousel-button {
+  margin-left: 94%;
+  margin-top: -178px;
+  clip: rect(-10px, 45px, 110px, -10px);
+}
+
+#right-inspired-item-carousel-arrow {
+  position: absolute;
+  width: 13px;
+  height: 22px;
+  background-size: 132px 235px;
+  background-image: url("./feed-gui-sprites.png");
+  background-position: 0px 0px;
+  cursor: pointer;
+}
+
+.fade-in-carousel-button-wrapper {
+  opacity: 0%;
+}
+
+.fade-in-carousel:hover div {
+  opacity: 100%;
+  transition: 1s ease-in-out;
+}
+
+#card-UI-row5 {
+  height: 420px;
+  width: 97%;
+  display: flex;
+  position: absolute;
+  margin-top: 1160px;
+  margin-left: 8px;
+}
+
+#row-5-card-1 {
+  display: block;
+}
+
+#review-your-purchase-img {
+  display: block;
+  margin-left: 60px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+#star-rating-icon-wrapper {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+#star-rating-icon {
+  height: 35px;
+  width: 38px;
+  background-image: url("./amazon-sprite-map.png");
+  background-position: -350px -705px;
+  cursor: pointer;
+}
+
+#review-products-link {
+  margin-top: 35px;
+}
+
+#create-oasis-link {
+  margin-top: 75px;
+}
+
+#create-oasis-img-1,
+#create-oasis-img-2,
+#create-oasis-img-3,
+#create-oasis-img-4 {
+  cursor: pointer;
+}
+
+#create-oasis-img-1,
+#create-oasis-img-3 {
+  margin-right: 15px;
+}
+
+#create-oasis-img-3 {
+  margin-left: 30px !important;
+}
+
+#candy-best-sellers-img {
+  width: 295px;
+  height: 304px;
+  margin-left: 17px;
+  cursor: pointer;
+}
+
+#candy-best-sellers-link {
+  margin-top: 13px;
+}
+
+#overstock-items-img {
+  width: 295px;
+  height: 304px;
+  margin-left: 17px;
+  cursor: pointer;
+}
+
+#shop-outlet-link {
+  margin-top: 13px;
+}
+
+#card-UI-row6 {
+  margin-left: 17px;
+  margin-top: 1600px;
+}
+
+.carousel-item-img {
+  cursor: pointer;
+  margin-right: 16px;
+  margin-top: -5px;
+  height: 220px;
+  max-width: 160px;
+}
+
+#fade-in-carousel {
+  display: flex;
+  align-items: center;
+}
+
+.fade-in-carousel-button {
+  position: absolute;
+  display: flex;
+  background: #fff;
+  width: 45px;
+  height: 100px;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 1px 3px #888;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left-fade-in-carousel-arrow {
+  position: absolute;
+  width: 13px;
+  height: 22px;
+  background-size: 132px 235px;
+  background-image: url("./feed-gui-sprites.png");
+  background-position: -14px 0px;
+}
+
+.left-fade-in-carousel-button {
+  margin-top: 40px;
+  clip: rect(-10px, 55px, 110px, 0);
+}
+
+.right-fade-in-carousel-button {
+  margin-left: 94%;
+  margin-top: -178px;
+  clip: rect(-10px, 45px, 110px, -10px);
+}
+
+.right-fade-in-carousel-arrow {
+  position: absolute;
+  width: 13px;
+  height: 22px;
+  background-size: 132px 235px;
+  background-image: url("./feed-gui-sprites.png");
+  background-position: 0px 0px;
+  cursor: pointer;
+}
+
+#row-6-card-header {
+  display: block;
+  width: 200px;
+  color: #444;
+  font-weight: 400;
+  position: absolute;
+}
+
+.book-carousel-img {
+  margin-top: 55px;
+  width: 133px;
+  height: 200px;
+}
+
+#left-book-carousel-button {
+  margin-top: 110px !important;
+}
+
+#right-book-carousel-button {
+  margin-top: -149px;
+}
+
+#card-UI-row7 {
+  margin-top: 1900px;
+  margin-left: 17px;
+}
+
+#row-7-card-header {
+  display: block;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: absolute;
+}
+
+.popular-brands-img {
+  display: inline-block;
+  height: 200px;
+  margin-right: 16px;
+  margin-top: 55px;
+  padding-right: 5px;
+  cursor: pointer;
+  max-width: 250px !important;
+}
+
+#popular-brands-img-6 {
+  position: absolute;
+  height: auto;
+}
+
+#left-popular-brands-carousel-button {
+  margin-top: 110px !important;
+}
+
+#right-popular-brands-carousel-button {
+  margin-top: -159px !important;
+}
+
+#card-UI-row8 {
+  margin-top: 2200px;
+  margin-left: 17px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+#row8-banner-img {
+  height: 250px;
+  width: 970px;
+  cursor: pointer;
+}
+
+#card-UI-row9 {
+  display: flex;
+  margin-top: 2465px;
+  position: absolute;
+}
+
+#home-office-img-1,
+#home-office-img-3 {
+  margin-right: 15px;
+}
+
+#home-office-label-1 {
+  margin-right: 120px;
+}
+
+#home-office-label-3 {
+  margin-right: 84px;
+}
+
+#row-9-card-1-link {
+  margin-top: 10px;
+}
+
+#row-9-card-2-img {
+  width: 295px;
+  height: 304px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#row-9-card-2-link {
+  margin-top: 20px;
+}
+
+#row-9-card-4-img {
+  margin-left: 20px;
+  cursor: pointer;
+  width: 295px;
+  height: 304px;
+}
+
+#row-9-card-4-link {
+  margin-top: 20px;
+}
+
+.labeled-four-img {
+  width: 140px;
+  height: 116px;
+  cursor: pointer;
+}
+
+.labeled-four-img-container {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.four-image-label {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-right: 64px;
+  cursor: pointer;
+}
+
+#mens-shoes-img-1,
+#mens-shoes-img-3 {
+  margin-right: 15px;
+}
+
+#mens-shoes-image-label-4 {
+  display: inline-block;
+  margin-left: 49px;
+}
+
+#row-9-card-3-link {
+  margin-top: 10px;
+}
+
+#back-to-top-footer:hover {
+  background-color: #3c4c61;
+}
+
+#card-UI-row-10 {
+  margin-top: 2900px;
+}
+
+.personal-care-img {
+  margin-top: 60px;
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+#left-personal-care-carousel-button {
+  margin-top: 110px;
+}
+
+#right-personal-care-carousel-button {
+  margin-top: -159px;
+}
+
+#card-UI-row-11 {
+  margin-top: 3200px;
+  display: flex;
+  position: absolute;
+}
+
+#spring-forward-img-1,
+#spring-forward-img-3 {
+  margin-right: 15px;
+}
+
+#spring-forward-label-1 {
+  margin-right: 115px;
+}
+
+#spring-forward-label-2 {
+  margin-right: 0px;
+}
+
+#spring-forward-label-3 {
+  margin-right: 74px;
+}
+
+#spring-forward-label-4 {
+  margin-right: 0px;
+}
+
+#row-11-card-1-link {
+  margin-top: 10px;
+}
+
+#row-11-card-2-img {
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+#four-star-deal-caption {
+  margin-left: 20px;
+}
+
+#four-star-deal-description {
+  margin-left: 20px;
+}
+
+#row-11-card-2-link {
+  margin-top: 50px;
+}
+
+#most-loved-img-1,
+#most-loved-img-3 {
+  margin-right: 15px;
+}
+
+#most-loved-image-label-1 {
+  margin-right: 125px;
+}
+
+#most-loved-image-label-3 {
+  margin-right: 74px;
+}
+
+#most-loved-image-label-4 {
+  margin-left: 43px;
+}
+
+#row-11-card-3-link {
+  margin-top: 10px;
+}
+
+#row-11-card-4-img {
+  margin-left: 20px;
+  cursor: pointer;
+  width: 295px;
+  height: 304px;
+}
+
+#row-11-card-4-link {
+  margin-top: 20px;
+}
+
+#card-UI-row-12 {
+  margin-top: 3640px;
+}
+
+#row-12-card-header {
+  display: block;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: absolute;
+}
+
+.recommended-deals-img {
+  margin-top: 60px;
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+#left-recommended-deals-carousel-button {
+  margin-top: 110px;
+}
+
+#right-recommended-deals-carousel-button {
+  margin-top: -159px;
+}
+
+#card-UI-row-13 {
+  margin-top: 3940px;
+  position: absolute;
+  display: flex;
+}
+
+#card-UI-row-13 > div {
+  width: 335px;
+  height: 420px;
+}
+
+#row-13-card-1-header {
+  margin-bottom: 25px;
+}
+
+#facemasks-img-1,
+#facemasks-img-3 {
+  margin-right: 15px;
+}
+
+#facemasks-img-3,
+#facemasks-img-4 {
+  margin-top: 42px;
+}
+
+#row-13-card-1-link {
+  margin-top: 40px;
+}
+
+#row-13-card-2-link {
+  margin-top: 11px;
+}
+
+#video-experience-img-1,
+#video-experience-img-3 {
+  margin-right: 15px;
+}
+
+#video-experience-image-label-1 {
+  margin-right: 129px;
+}
+
+#video-experience-image-label-3 {
+  margin-right: 51px;
+}
+
+#row-13-card-3-img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#row-13-card-3-link {
+  margin-top: 21px;
+}
+
+#row-13-card-4-img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#row-13-card-4-link {
+  margin-top: 21px;
+}
+
+#card-UI-row-14 {
+  position: absolute;
+  display: flex;
+  margin-top: -590px;
+  height: 281px;
+}
+
+#row-14-card-header {
+  display: block;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: absolute;
+}
+
+.video-games-img {
+  margin-top: 60px;
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+#left-video-games-carousel-button {
+  margin-top: 110px;
+}
+
+#right-video-games-carousel-button {
+  margin-top: -139px;
+}
+
+#video-games-button-wrapper {
+  position: absolute;
+  margin-top: -280px;
+  margin-left: 94%;
+}
+
+#row-15-card-header {
+  display: block;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+#card-UI-row-15 {
+  position: absolute;
+  display: flex;
+  margin-top: -287px;
+  width: 100%;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+.more-books-img {
+  margin-top: 60px;
+  margin-right: 13px;
+  margin-left: 13px;
+  max-height: 200px;
+  cursor: pointer;
+}
+
+#more-books-carousel-button {
+  margin-top: 100px;
+}
+
+#more-books-button-wrapper {
+  position: absolute;
+  margin-top: -280px;
+  margin-left: 94%;
+}

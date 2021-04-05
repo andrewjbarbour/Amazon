@@ -1,0 +1,293 @@
+.signin-wrapper{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    min-height: 281px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Amazon Ember, Arial;
+}
+
+.signin img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.signin span{
+    text-align: left;
+    display: block;
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.signin h1{
+    text-align: left;
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.signin label {
+    font-size: 13px;
+}
+
+.signin input {
+    border: 1px solid;
+    border-color: rgb(133, 133, 133);
+    font-weight: 400px;
+    min-height: 25px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+.signin input:focus{
+    outline: none;
+    border: 1px solid #c7511f;
+    border-radius: 3px;
+    box-shadow: 0 0 7px rgb(199 81 31 / 80%);
+}
+
+.signin input:not(:focus){
+    outline: none;
+}
+
+.signin #email-label{
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-right: auto;
+}
+
+.signin #email {
+    display: block;
+    min-width: 296px !important;
+    border-radius: 3px;
+    line-height: 19px;
+    margin-top: 3px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signin #continue{
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 31px;
+    line-height: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+    min-width: 302px !important;
+    text-align: center;
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    border-color: #a88734 #9c7e31 #846a29;
+    border-style: solid;
+    border-width: 1px;
+    color: #111;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Amazon Ember, Arial;
+    margin-bottom: 15px;
+
+}
+
+.signin #continue:hover{
+    background: linear-gradient(to bottom,#f7dfa5,#eeae0ddc);
+}
+
+#privacy-policy{
+    margin-left: 25px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+a.legal-link{
+    color: #0066c0;
+}
+
+a.legal-link:hover{
+    text-decoration: underline;
+    color: #c7511f;
+    text-decoration-color: #c7511f;
+    cursor: pointer;
+}
+
+.signin #help{
+    font-size: 13px;
+    font-family: Amazon Ember, Arial;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    color: #0066c0;
+}
+
+.signin #collapsible {
+    display: none;
+  }
+
+.signin .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-left: 5px solid #0f1111;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+  }
+
+  .signin .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+
+
+.signin .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+
+.signin .toggle:checked + .lbl-toggle + .collapsible-content {
+    min-height: 42px;
+  }
+
+
+.signin .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+.signin .wrap-collapsible{
+    padding-bottom: 0px;
+  }
+
+#need-help{
+    color: #0066c0;
+}
+
+#need-help:hover{
+    color: #c7511f;
+    text-decoration-color: #c7511f;
+}
+
+.help-content{
+    margin: 5px;
+    margin-left: 20px !important;
+    font-size: 13px !important;
+    margin-bottom: 0px !important;
+}
+
+.help-content:hover{
+    text-decoration: underline;
+    color: #c7511f;
+    text-decoration-color: #c7511f;
+    cursor: pointer;
+}
+
+#new-to-amazon{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #767676;
+    font-family: Amazon Ember;
+    font-weight: 500;
+    padding: 0 8px 0 7px;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.47em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+#new-to-amazon:before, #new-to-amazon:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 123px;
+    height: 1px;
+    content: '\a0';
+    background-color: #767676;
+    opacity: .35;
+}
+
+#new-to-amazon:before {
+    margin-left: -9%;
+    text-align: right;
+}
+
+#new-to-amazon:after{
+    margin-left: .5%;
+}
+
+#create-account{
+    display: inline block;
+    margin: auto;
+    font-family: Amazon Ember;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 6px;
+    vertical-align: middle;
+    border: solid 1px #8d9096;
+    border-radius: 3px;
+    line-height: 19px;
+    font-size: 13px;
+    color: #111;
+    height: 25px;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 60%) inset;
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    width: 350px;
+}
+
+#create-account:hover{
+    background: #e7e9ec;
+}
+
+#xl-footer{
+    height: 44px;
+    margin-top: 26px;
+    margin-bottom: -18px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    opacity: 1;
+}
+
+#footer-nav-wrapper{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.footer-nav {
+    margin: 26px 25px 0px 25px;
+    font-size: 11px;
+    line-height: 1.465px;
+    color: #0066c0;
+}
+
+.footer-nav:hover{
+    text-decoration: underline;
+    color: #c7511f;
+    text-decoration-color: #c7511f;
+    cursor: pointer;
+}
+
+#amazon-copyright{
+    padding-top: 20px;
+    font-size: 11px;
+    font-family: Amazon Ember;
+    color: #555;
+    line-height: 1.465;
+    font-weight: 500;
+    text-align: center;
+}

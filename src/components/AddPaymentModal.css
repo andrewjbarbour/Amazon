@@ -1,0 +1,453 @@
+.modal {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    box-sizing: border-box;
+  }
+  
+  .modal.modal-fade {
+    animation: fade-in 1s 1 linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  .modal > .modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+ .modal-close {
+    background: url('./amazon-sprite-map.png') 0 0;
+    background-position: -297px -5px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    opacity: .64;
+    width: 10px;
+    height: 9px;
+    align-items: right;
+    justify-content: right;
+    z-index: 999999;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .modal-close-image {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    opacity: .64;
+    width: 10px;
+    height: 9px;
+    align-items: right;
+    justify-content: right;
+    z-index: 999999;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .modal > .modal-close:hover {
+    background: rgba(255, 255, 255, 0.989);
+    cursor: pointer;
+  }
+  
+  .modal > .modal-body {
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+    max-height: 100%;
+    color: #0f1111;
+    margin-right: 25%; 
+    margin-left: 25%; 
+    width: 704px; 
+    height: 287px !important;
+  }
+  
+  #modal-header{
+    display: flex;
+    border-bottom: 1px solid #cdcdcd;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%) inset, 0 -1px 0 rgb(255 255 255 / 40%) inset;
+    margin-top: -10px !important;
+    max-height: 40px;
+    width: 100%;
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea); 
+  }
+
+ #add-credit-modal-header{
+   border: 1px transparent;
+   margin-left: 10px;
+   font-weight: 700;
+   padding-top: 0px;
+   padding-left: 2px;
+   font-size: 13px;
+   line-height: 19px;
+   width: 650px;
+   color: #0f1111;
+   font-family: Amazon Ember, Arial, sans-serif;
+ }
+
+ #add-credit-modal-content{
+   display: flex;
+ }
+
+ #add-credit-card-left{
+   font-size: 13px;
+   width: 383px;
+   padding: 14px 18px;
+   font-family: Amazon Ember, Arial, sans-serif;
+   margin-left: 20px;
+ }
+
+ #card-number-wrapper{
+  display: inline-block;
+  padding: 8px;
+  margin-top: -5px;
+  
+ }
+
+ #name-on-card-wrapper{
+   display: block;
+ }
+
+ #expiration-date-wrapper{
+   margin-top: 8px;
+   margin-left: -6px;
+   
+ }
+
+ #expiration-month{
+   margin-right: 5px;
+   width: 52.25px;
+ }
+
+ #expiration-year{
+   width: 69.48px;
+ }
+
+
+ #expiration-month, #expiration-year{
+  height: 31px;
+  border: 1px solid #a6a6a6;
+  border-top-color: #949494;
+  border-radius: 3px;
+  font-family: Amazon Ember, Arial, sans-serif;
+  padding-left: 5px;
+  
+ }
+
+ #expiration-date-wrapper select:focus, #expiration-date-wrapper select:active{
+  outline: none;
+  border: 1px solid #c7511f;
+  border-radius: 3px;
+  box-shadow: 0 0 7px rgb(199 81 31 / 80%);
+}
+
+ #card-number-label, #name-on-card-label, #expiration-date-label{
+    margin-right: 15px;
+    font-weight: 700;
+    color: #0F1111;
+
+ }
+
+ #name-on-card, #card-number{
+   height: 25px;
+   border: 1px solid #a6a6a6;
+   border-top-color: #949494;
+   border-radius: 3px;
+   padding: 3px 7px;
+   outline: none;
+   box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+   vertical-align: middle;
+ }
+
+ #add-credit-modal-content input:focus{
+    border: 1px solid #c7511f;
+    border-radius: 3px;
+    box-shadow: 0 0 7px rgb(199 81 31 / 80%);
+}
+
+#default-payment{
+  border: none;
+  box-shadow: none !important;
+}
+
+#payment-tooltip{
+  display: block;
+  margin-left: 36%;
+}
+
+#payment-tooltip{
+  color: #0066c0;
+  font-size: .8rem;
+}
+
+#payment-tooltip:hover{
+  text-decoration: underline;
+  color: #c7511f;
+  text-decoration-color: #c7511f;
+  cursor: pointer;
+  
+}
+
+#expanded-payment-tooltip{
+  z-index: 99999999;
+  height: 120px;
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 13%);
+  display: none;
+  position: absolute;
+  transform: translate(-40px, -140px);
+}
+
+#tooltip-header{
+  display: flex;
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 0 1px 0 rgb(255 255 255 / 50%) inset, 0 -1px 0 rgb(255 255 255 / 40%) inset;
+  margin-top: -10px !important;
+  max-height: 40px;
+  width: 100%;
+  background: linear-gradient(to bottom,#f7f7f7,#eaeaea); 
+}
+
+#tooltip-header-label{
+ border: 1px transparent;
+ margin-left: 10px;
+ font-weight: 700;
+ padding-top: 0px;
+ padding-left: 2px;
+ font-size: 13px;
+ line-height: 19px;
+ width: 400px;
+ color: #0f1111;
+ font-family: Amazon Ember, Arial, sans-serif;
+}
+
+.tooltip-close {
+  background: url('./amazon-sprite-map.png') 0 0;
+  background-position: -297px -5px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  opacity: .64;
+  width: 10px;
+  height: 9px;
+  align-items: right;
+  justify-content: right;
+  z-index: 999999;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+#tooltip-content{
+  display: block;
+  text-align: left;
+  padding: 16px 15px;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: Amazon Ember, Arial, sans-serif;
+  font-weight: 400px;
+}
+
+ #name-on-card{
+   margin-left: 3px;
+ }
+
+ #default-payment-wrapper{
+   margin-top: 8px;
+ }
+
+ #default-payment-label{
+  font-size: 13px;
+  font-family: Amazon Ember, Arial, sans serif;
+ }
+
+ #default-payment{
+  margin-left: 105px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #0F1111;
+ }
+
+ #add-card-divider{
+  
+    top: 51%;
+    overflow: hidden;
+    width: 1px;
+    height: 180px;
+    content: '\a0';
+    background-color: #767676;
+    opacity: .15;
+    margin-top: 10px;
+ }
+
+ #add-credit-card-right{
+  font-family: Amazon Ember, Arial, sans-serif;
+  font-size: 13px;
+  width: 321px;
+  justify-content: right;
+  padding: 14px 18px;
+ }
+
+ #accepted-cards{
+   display: block;
+   margin-bottom: 10px;
+ }
+
+ #payment-sprite-row1a{
+   width: 45px;
+   height: 29px;
+   background: url('./paymentspritemap.png') 0 0;
+   margin-bottom: 2px;
+   margin-right: 5px;
+ }
+
+ #payment-sprite-row1b{
+  width: 45px;
+  height: 29px;
+  background: url('./paymentspritemap.png') 0 0;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  background-position: -45px;
+}
+
+#payment-sprite-row1c{
+  width: 45px;
+  height: 29px;
+  background: url('./paymentspritemap.png') 0 0;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  background-position: -90px;
+}
+
+#payment-sprite-row1d{
+  width: 45px;
+  height: 29px;
+  background: url('./paymentspritemap.png') 0 0;
+  margin-bottom: 2px;
+  margin-right: 50px;
+  background-position: -135px;
+}
+
+ #payment-sprite-row2a{
+  display: inline-block;
+  width: 45px;
+  height: 29px;
+  margin-right: 5px;
+  background: url('./paymentspritemap.png') 0 0;
+  background-position: -180px;
+}
+
+#payment-sprite-row2b{
+  width: 45px;
+  height: 29px;
+  margin-right: 5px;
+  background: url('./paymentspritemap.png') 0 0;
+  background-position: -225px;
+}
+
+#payment-sprite-row2c{
+  width: 45px;
+  height: 29px;
+  margin-right: 5px;
+  background: url('./paymentspritemap.png') 0 0;
+  background-position: -270px;
+}
+
+#payment-sprite-row2d{
+  width: 45px;
+  height: 29px;
+  background: url('./paymentspritemap.png') 0 0;
+  background-position: -585px;
+}
+
+#payment-modal-footer{
+  display: flex;
+    border-top: 1px solid #cdcdcd;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%) inset, 0 -1px 0 rgb(255 255 255 / 40%) inset;
+    margin-top: 17px;
+    height: 48px;
+    width: 100%;
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea) !important;
+}
+
+#add-your-card{
+  display: block;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: Amazon Ember, Arial;
+  height: 29px;
+  width: 103px !important;
+  text-align: center;
+  background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+  border-color: #a88734 #9c7e31 #846a29;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px 6px;
+  color: #111;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+#add-your-card:hover{
+  background: linear-gradient(to bottom,#f7dfa5,#eeae0ddc);
+}
+
+#add-your-card-cancel{
+  display: block;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #e7e9ec00;
+  font-family: Amazon Ember, Arial;
+  height: 29px;
+  width: 59px !important;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px 6px;
+  color: #111;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+#add-your-card-cancel:hover{
+  background: #e7e9ec;
+}
+  @keyframes fade-in {
+    0% {
+      animation-timing-function: cubic-bezier(0.2242, 0.7499, 0.3142, 0.8148);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
