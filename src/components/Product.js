@@ -75,6 +75,28 @@ export function Product(){
                             <span id="paperback-edition-price" class="product-edition-price">$24.99</span>
                             <i id="prime-version-button-logo"></i>
                         </div>
+                        
+                    </div>
+                    <div class="product-version-subcard-wrapper">
+                        <div class="product-version-subcard">
+                                <a class="product-version-subcard-header">Read with Our <span id="free-app-bold">Free App</span></a>
+                        </div>
+                        <div class="product-version-subcard">
+                                <a class="product-version-subcard-header">2 Used <span class="from-text">from</span> $32.98</a>
+                                <a class="product-version-subcard-header">3 New <span  class="from-text">from</span> $24.99</a>
+                        </div>
+                    </div>
+                    <div class="main-product-wrapper">
+                        <div class="main-product-description">
+                        The system design interview is considered to be the most complex and most difficult technical job 
+                        interview by many. This book provides a step-by-step framework on how to tackle a system design
+                        question. It includes many real-world examples to illustrate the systematic approach with detailed
+                        steps that you can follow.
+
+                        <span class="main-product-description-subheader">What’s inside?</span>
+                        <span class="main-product-description-subheader-text">- An insider’s take on what interviewers really look for and why.</span>
+
+                        </div>
                     </div>
                 </section>
                 <section class="top-product-UI-right-col">

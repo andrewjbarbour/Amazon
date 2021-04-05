@@ -295,6 +295,35 @@
     background-color: #fef8f2;
 }
 
+
+.product-version-subcard-wrapper{
+    display: flex;
+    margin-top: 5px;
+}
+
+.product-version-subcard-header{
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #007185;
+    margin-right: 33px;
+}
+
+.product-version-subcard-header:hover{
+    cursor: pointer;
+    color: #e77600;
+    text-decoration: underline;
+}
+
+#free-app-bold{
+    color: #b12704;
+    font-weight: 700;
+}
+
+.from-text{
+    color: #595959;
+}
+
 #paperback-edition-text {
   margin-top: 3px;
   display: block;
@@ -313,6 +342,24 @@
   height: 10px;
   background-image: url("amazon-prime-sprite-map.png");
   background-position: -84px -2px;
+}
+
+.main-product-wrapper{
+    margin-top: 20px;
+}
+
+.main-product-description{
+    color: #333;
+    text-rendering: optimizeLegibility;
+    font-size: 14px;
+    width: 650px;
+    line-height: 22px;
+}
+
+.main-product-description-subheader{
+    display: block;
+    font-weight: 700;
+    margin-top: 20px;
 }
 
 /*Col 3*/
