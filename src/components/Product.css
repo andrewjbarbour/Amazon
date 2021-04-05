@@ -249,7 +249,11 @@
     margin-top: 10px;
 }
 
-#kindle-edition-button{
+.product-version-wrapper{
+    display: flex;
+}
+
+.product-version-button{
     width: 152px;
     height: 49px;
     border: 1px solid;
@@ -260,6 +264,16 @@
     margin-top: 10px;
     border-radius: 3px;
     background: #fff;
+    margin-right: 10px;
+}
+
+.product-version-button:hover{
+    cursor: pointer;
+    background-color: #eaecee;
+}
+
+.product-version-button:hover #kindle-edition-price{
+    color: #b12704;
 }
 
 #kindle-edition-text{

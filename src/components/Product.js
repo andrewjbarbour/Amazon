@@ -65,9 +65,14 @@ export function Product(){
                     </div>
                     <hr class="top-product-UI-bottom-divider"></hr>
                     <span id="top-product-show-editions-dropdown">See all formats and editions</span>
-                    <div id="kindle-edition-button">
-                        <span id="kindle-edition-text">Kindle</span>
-                        <span id="kindle-edition-price">$24.99</span>
+                    <div class="product-version-wrapper">
+                        <div id="kindle-edition-button" class="product-version-button">
+                            <span id="kindle-edition-text">Kindle</span>
+                            <span id="kindle-edition-price">$24.99</span>
+                        </div>
+                        <div id="paperback-editino-button" class="product-version-button">
+
+                        </div>
                     </div>
                 </section>
                 <section class="top-product-UI-right-col">
