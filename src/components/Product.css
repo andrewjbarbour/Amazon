@@ -252,10 +252,30 @@
 #kindle-edition-button{
     width: 152px;
     height: 49px;
-    border: 1px solid #adb1b8;
+    border: 1px solid;
+    border-top-color: rgb(173, 177, 184);
+    border-bottom-color: rgb(141, 144, 150);
+    border-left-color: rgb(162, 166, 172);
+    border-right-color: rgb(162, 166, 172);
     margin-top: 10px;
     border-radius: 3px;
     background: #fff;
+}
+
+#kindle-edition-text{
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #0F1111;
+}
+
+#kindle-edition-price{
+    display: block;
+    margin-left: 10px;
+    font-weight: 500;
+    color: #565959;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 /*Col 3*/
