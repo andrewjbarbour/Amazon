@@ -70,7 +70,7 @@ export function Product(){
                             <span id="kindle-edition-text" class="product-edition-text">Kindle</span>
                             <span id="kindle-edition-price" class="product-edition-price">$24.99</span>
                         </div>
-                        <div id="paperback-editino-button" class="product-version-button">
+                        <div id="paperback-edition-button" class="product-version-button">
                             <span id="paperback-edition-text" class="product-edition-text">Paperback</span>
                             <span id="paperback-edition-price" class="product-edition-price">$24.99</span>
                             <i id="prime-version-button-logo"></i>

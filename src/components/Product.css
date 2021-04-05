@@ -290,6 +290,11 @@
   line-height: 20px;
 }
 
+#paperback-edition-button{
+    border-color: #e77600;
+    background-color: #fef8f2;
+}
+
 #paperback-edition-text {
   margin-top: 3px;
   display: block;
