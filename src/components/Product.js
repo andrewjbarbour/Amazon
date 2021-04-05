@@ -61,6 +61,7 @@ export function Product(){
                     </div>
                     <div class="bestseller-badge-wrapper">
                         <i class="bestseller-badge-icon">#1 Best Seller</i>
+                        <a class="bestseller-badge-link">in Bioinformatics</a>
                     </div>
                 </section>
                 <section class="top-product-UI-right-col">

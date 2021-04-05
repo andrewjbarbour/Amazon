@@ -168,12 +168,11 @@
 .bestseller-badge-wrapper{
     display: block;
     height: 18px;
-    width: 200px;
     margin-top: 15px;
 }
 
 .bestseller-badge-icon{
-    display: block;
+    display: inline-block;
     height: 18px;
     width: 85px;
     background-color: #C45500;
@@ -221,7 +220,17 @@
     border-bottom-style: solid;
 }
 
+.bestseller-badge-link{
+    font-size: 14px;
+    color: #007185;
+    margin-left: 15px;
+}
 
+.bestseller-badge-link:hover{
+    cursor: pointer;
+    color: #d45704;
+    text-decoration: underline;
+}
 
 /*Col 3*/
 
