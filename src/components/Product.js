@@ -9,6 +9,8 @@ import productSmall2 from './product-2-small-2.jpg';
 
 export function Product(){
 
+    const [dropDownToggle, setDropDownToggle] = useState(0);
+
     const openTooltip = (event) => {
         const tooltip = document.getElementById('expanded-free-returns-tooltip');
         tooltip.style.display = "inline-block";
@@ -17,6 +19,18 @@ export function Product(){
       const closeTooltip = (event) => {
         const tooltip = document.getElementById('expanded-free-returns-tooltip');
         tooltip.style.display = "none";
+      }
+
+      const rotateDropdownSelector = () => {
+        const dropdownSelectorIcon = document.getElementById('dropdown-selector-icon');
+        if(dropDownToggle===0){
+            dropdownSelectorIcon.style.transform = "rotate(0deg)";
+            setDropDownToggle(1);
+        }
+        else{
+            dropdownSelectorIcon.style.transform = "rotate(90deg)";
+            setDropDownToggle(0);
+        }
       }
 
     return(
@@ -95,7 +109,34 @@ export function Product(){
 
                         <span class="main-product-description-subheader">What’s inside?</span>
                         <span class="main-product-description-subheader-text">- An insider’s take on what interviewers really look for and why.</span>
-
+                        
+                        <div class="read-more-wrap-collapsible">
+                            <i id="dropdown-selector-icon"></i>   
+                            <input id="read-more-collapsible" class="toggle" type="checkbox" onClick={rotateDropdownSelector} />
+                            <label for="read-more-collapsible" class="lbl-toggle" id="read-more-collapsible-label">Read more</label>
+                            <div class="read-more-collapsible-content">
+                            - A 4-step framework for solving any system design interview question.
+- 16 real system design interview questions with detailed solutions.
+- 188 diagrams to visually explain how different systems work.
+Table Of Contents
+Chapter 1: Scale From Zero To Millions Of Users
+Chapter 2: Back-of-the-envelope Estimation
+Chapter 3: A Framework For System Design Interviews
+Chapter 4: Design A Rate Limiter
+Chapter 5: Design Consistent Hashing
+Chapter 6: Design A Key-value Store
+Chapter 7: Design A Unique Id Generator In Distributed Systems
+Chapter 8: Design A Url Shortener
+Chapter 9: Design A Web Crawler
+Chapter 10: Design A Notification System
+Chapter 11: Design A News Feed System
+Chapter 12: Design A Chat System
+Chapter 13: Design A Search Autocomplete System
+Chapter 14: Design Youtube
+Chapter 15: Design Google Drive
+Chapter 16: The Learning Continues
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </section>

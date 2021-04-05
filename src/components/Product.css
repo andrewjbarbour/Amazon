@@ -362,6 +362,138 @@
     margin-top: 20px;
 }
 
+.Product .wrap-collapsible{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.Product #collapsible {
+    display: none;
+  }
+
+.Product .lbl-toggle{
+    display: block;
+    cursor: pointer;
+    color: #007185;
+    
+}
+.Product .lbl-toggle:hover{
+    text-decoration: underline;
+    text-decoration-color: #c7511f;
+    color: #c7511f;
+}
+
+.Product .read-more-collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+
+ .Product .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-left: 5px solid #0f1111;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+    transition: transform .2s ease-out;
+  }
+
+.Product .checkbox-wrapper{
+      display: flex;
+  }
+
+.Product .toggle:checked + .lbl-toggle + .read-more-collapsible-content {
+    min-height: 400px;
+    margin-bottom: -10px;
+  }
+
+
+ .Product .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+
+.Product .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+.Product .read-more-wrap-collapsible{
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 13px;
+}
+
+#dropdown-selector-icon{
+    position: absolute;
+    margin-top: 5px;
+    transform: rotate(90deg);
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    opacity: .6;
+    background-image: url('./amazon-sprite-map.png');
+    background-position: -366px -86px;
+}
+
+#read-more-collapsible-label{
+    color: #007185;
+}
+
+#read-more-collapsible-label:hover{
+    color: #c7511f;
+}
+
+.Product #read-more-collapsible {
+    display: none;
+  }
+
+.Product .lbl-toggle{
+    display:block;
+    cursor: pointer;
+    color: #007185;
+    
+}
+.Product .lbl-toggle:hover{
+    text-decoration: underline;
+    text-decoration-color: #c7511f;
+    color: #c7511f;
+}
+
+.Product .read-more-collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+
+ .Product .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-left: 5px solid #0f1111;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+  }
+
+.Product .checkbox-wrapper{
+      display: flex;
+  }
+
+.Product .toggle:checked + .lbl-toggle + .read-more-collapsible-content {
+    min-height: 440px;
+    margin-bottom: -10px;
+  }
+
 /*Col 3*/
 
 .buy-box {
