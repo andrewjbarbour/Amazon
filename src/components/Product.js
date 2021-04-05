@@ -10,6 +10,7 @@ import productSmall2 from './product-2-small-2.jpg';
 export function Product(){
 
     const [dropDownToggle, setDropDownToggle] = useState(0);
+    let [toggleDropdown2, setToggleDropdown2] = useState("Read more");
 
     const openTooltip = (event) => {
         const tooltip = document.getElementById('expanded-free-returns-tooltip');
@@ -24,14 +25,30 @@ export function Product(){
       const rotateDropdownSelector = () => {
         const dropdownSelectorIcon = document.getElementById('dropdown-selector-icon');
         if(dropDownToggle===0){
-            dropdownSelectorIcon.style.transform = "rotate(0deg)";
+            dropdownSelectorIcon.style.transform = "translateY(388px) rotate(270deg)";
             setDropDownToggle(1);
         }
-        else{
-            dropdownSelectorIcon.style.transform = "rotate(90deg)";
+        else{       
+            dropdownSelectorIcon.style.transform = "translateY(0px) rotate(90deg)";
             setDropDownToggle(0);
         }
       }
+
+      const toggleDropdownContent = () => {
+        const expandedDropdown = document.getElementsByClassName("expanded-product-description-dropdown");
+        if(toggleDropdown2 === "Read more"){
+            setToggleDropdown2("Read less")
+            for(let i=0; i<expandedDropdown.length; i++){
+                expandedDropdown[i].style.display = ("block");
+            }
+        }
+        else{
+            setToggleDropdown2("Read more");
+            for(let i=0; i<expandedDropdown.length; i++){
+                expandedDropdown[i].style.display = ("none");
+            }
+        }
+    }
 
     return(
         <div class="Product">
@@ -113,28 +130,31 @@ export function Product(){
                         <div class="read-more-wrap-collapsible">
                             <i id="dropdown-selector-icon"></i>   
                             <input id="read-more-collapsible" class="toggle" type="checkbox" onClick={rotateDropdownSelector} />
-                            <label for="read-more-collapsible" class="lbl-toggle" id="read-more-collapsible-label">Read more</label>
+                            <ul id="read-more-collapsible-list" class="expanded-product-description-dropdown">
+                                <li id="read-more-collapsible-list-header">Table Of Contents</li>
+                                <li>Chapter 1: Scale From Zero To Millions Of Users</li>
+                                <li>Chapter 2: Back-of-the-envelope Estimation</li>
+                                <li>Chapter 3: A Framework For System Design Interviews</li>
+                                <li>Chapter 4: Design A Rate Limiter</li>
+                                <li>Chapter 5: Design Consistent Hashing</li>
+                                <li>Chapter 6: Design A Key-value Store</li>
+                                <li>Chapter 7: Design A Unique Id Generator In Distributed Systems</li>
+                                <li>Chapter 8: Design A Url Shortener</li>
+                                <li>Chapter 9: Design A Web Crawler</li>
+                                <li>Chapter 10: Design A Notification System</li>
+                                <li>Chapter 11: Design A News Feed System</li>
+                                <li>Chapter 12: Design A Chat System</li>
+                                <li>Chapter 13: Design A Search Autocomplete System</li>
+                                <li>Chapter 14: Design Youtube</li>
+                                <li>Chapter 15: Design Google Drive</li>
+                                <li>Chapter 16: The Learning Continues</li>
+                            </ul>
+                            <label for="read-more-collapsible" class="lbl-toggle" id="read-more-collapsible-label" onClick={toggleDropdownContent}>{toggleDropdown2}</label>
                             <div class="read-more-collapsible-content">
                             - A 4-step framework for solving any system design interview question.
-- 16 real system design interview questions with detailed solutions.
-- 188 diagrams to visually explain how different systems work.
-Table Of Contents
-Chapter 1: Scale From Zero To Millions Of Users
-Chapter 2: Back-of-the-envelope Estimation
-Chapter 3: A Framework For System Design Interviews
-Chapter 4: Design A Rate Limiter
-Chapter 5: Design Consistent Hashing
-Chapter 6: Design A Key-value Store
-Chapter 7: Design A Unique Id Generator In Distributed Systems
-Chapter 8: Design A Url Shortener
-Chapter 9: Design A Web Crawler
-Chapter 10: Design A Notification System
-Chapter 11: Design A News Feed System
-Chapter 12: Design A Chat System
-Chapter 13: Design A Search Autocomplete System
-Chapter 14: Design Youtube
-Chapter 15: Design Google Drive
-Chapter 16: The Learning Continues
+                            <br/>- 16 real system design interview questions with detailed solutions.
+                            <br/>- 188 diagrams to visually explain how different systems work.
+                            
                             </div>
                         </div>
                         </div>
