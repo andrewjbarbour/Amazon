@@ -243,6 +243,21 @@
     margin-top: 15px;
 }
 
+#top-product-show-editions-dropdown{
+    font-size: 12px;
+    color: #007185;
+    margin-top: 10px;
+}
+
+#kindle-edition-button{
+    width: 152px;
+    height: 49px;
+    border: 1px solid #adb1b8;
+    margin-top: 10px;
+    border-radius: 3px;
+    background: #fff;
+}
+
 /*Col 3*/
 
 .buy-box{

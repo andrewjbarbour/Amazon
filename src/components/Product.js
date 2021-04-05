@@ -64,6 +64,10 @@ export function Product(){
                         <a class="bestseller-badge-link">in Assembly Language Programming</a>
                     </div>
                     <hr class="top-product-UI-bottom-divider"></hr>
+                    <span id="top-product-show-editions-dropdown">See all formats and editions</span>
+                    <div id="kindle-edition-button">
+                        
+                    </div>
                 </section>
                 <section class="top-product-UI-right-col">
                     <div class="buy-box">
