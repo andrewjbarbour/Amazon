@@ -221,8 +221,11 @@
 }
 
 .bestseller-badge-link{
+    display: inline-block;
+    position: absolute;
     font-size: 14px;
     color: #007185;
+    margin-top: 3px;
     margin-left: 15px;
 }
 
@@ -230,6 +233,14 @@
     cursor: pointer;
     color: #d45704;
     text-decoration: underline;
+}
+
+.top-product-UI-bottom-divider{
+    width: 774px;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 15px;
 }
 
 /*Col 3*/
