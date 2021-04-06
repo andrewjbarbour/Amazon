@@ -269,6 +269,12 @@ export function Product(){
                                 <span id="buy-box-sold-by">Sold by </span> 
                                 <span class="buy-box-amazon-subheader">Amazon.com</span>   
                             </div>
+                            <div id="buy-box-row-16">
+                                <input id="gift-receipt-checkbox" type="checkbox"></input>
+                                <label id="gift-receipt-checkbox-label" for="gift-receipt-checkbox">Add a gift receipt for easy </label>
+                                <span id="gift-receipt-returns">returns</span>
+                            </div>
+                            <hr id="buy-box-bottom-divider"></hr>
                         </div>
                     </div>
                 </section>
