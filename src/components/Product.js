@@ -258,8 +258,16 @@ export function Product(){
                             <div id="buy-box-row-13">
                                 <div id="secured-ssl-wrapper">
                                     <img id="buy-box-secured-ssl-icon" src={securedSsl}></img>
-                                    <span id="buy-box-secure-transaction-link">Secure Transaction</span>
+                                    <span id="buy-box-secure-transaction-link">Secure transaction</span>
                                 </div>
+                            </div>
+                            <div id="buy-box-row-14">
+                                <span id="buy-box-ships-from">Ships from </span>
+                                <span class="buy-box-amazon-subheader">Amazon.com</span>    
+                            </div>
+                            <div id="buy-box-row-15">
+                                <span id="buy-box-sold-by">Sold by </span> 
+                                <span class="buy-box-amazon-subheader">Amazon.com</span>   
                             </div>
                         </div>
                     </div>
