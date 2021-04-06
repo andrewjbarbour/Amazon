@@ -1,6 +1,6 @@
 # Amazon
 
-An Amazon clone site
+A high fidelity, responsively designed Amazon clone site
 
 ## Table of Contents
 * [Description](#description)
