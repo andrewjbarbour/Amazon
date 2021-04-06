@@ -819,15 +819,18 @@
 
 #buy-box-row-13{
     margin-top: 15px;
+    display: flex;
 }
 
 #buy-box-secured-ssl-icon{
     width: 11.42px;
     height: 15px;
-    vertical-align: center;
+    margin-top: 2px;
+    transform: translateY(2px);
 }
 
 #buy-box-secure-transaction-link{
+    display: inline-block;
     font-size: 14px;
     color: #007185;
     margin-left: 15px;
