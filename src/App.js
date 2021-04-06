@@ -11,7 +11,7 @@ import PlaceOrderPrime from './components/PlaceOrderPrime';
 function App() {
   return (
     <div className="App">
-      <PlaceOrderPrime/>
+      <Product/>
     </div>
   );
 }

@@ -251,6 +251,9 @@ export function Product(){
                             <div id="buy-box-row-11">
                                 <input value="Add to Cart" name="place-order-button" id="place-order-button" type="submit" />
                             </div>
+                            <div id="buy-box-row-12">
+                                <input value="Buy Now" name="buy-now-button" id="buy-now-button" type="submit" />
+                            </div>
                         </div>
                     </div>
                 </section>
