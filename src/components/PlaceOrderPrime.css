@@ -472,7 +472,7 @@
 }
 
 #place-order-button:hover{
-    background: linear-gradient(to bottom,#f7dfa5,#eeae0ddc);
+    background: #F7CA00;
 }
 
 #place-order-button-label{
@@ -1102,7 +1102,7 @@ td{
 }
 
 #place-order-button-bottom:hover{
-    background: linear-gradient(to bottom,#f7dfa5,#eeae0ddc);
+    background: #F7CA00;
 }
 
 #order-total-bottom-wrapper{

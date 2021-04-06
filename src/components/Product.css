@@ -778,6 +778,7 @@
 }
 
 .Product #place-order-button{
+    margin-top: 25px;
     width: 230px;
     height: 31px;
     border-radius: 19px;
