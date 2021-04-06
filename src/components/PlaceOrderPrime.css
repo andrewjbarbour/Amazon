@@ -943,22 +943,22 @@ td{
 
 #cart-item-quantity-selector{
     padding: 0px 6px 0px 7px;
-    border: 1px solid transparent;
+    border: 1px solid #d5d9d9;
     outline: none;
-    box-sizing: border-box;
     font-size: 11px;
     line-height: 20px;
     background: #F0F2F2;
-    border-radius: 7px;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgb(15 17 17 / 15%);
     text-align: center;
-    height: 20px;
+    width: 62.72px;
+    height: 22px;
     
 }
 
 #cart-item-quantity-selector:hover{
     cursor: pointer;
-    background: #d0d1d1;
+    background: #e3e6e6;
 }
 
 #place-order-sold-by{
