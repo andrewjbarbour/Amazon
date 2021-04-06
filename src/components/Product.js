@@ -12,12 +12,12 @@ export function Product(){
     const [dropDownToggle, setDropDownToggle] = useState(0);
     let [toggleDropdown2, setToggleDropdown2] = useState("Read more");
 
-    const openTooltip = (event) => {
+    const openTooltip = () => {
         const tooltip = document.getElementById('expanded-free-returns-tooltip');
         tooltip.style.display = "inline-block";
       }
     
-      const closeTooltip = (event) => {
+      const closeTooltip = () => {
         const tooltip = document.getElementById('expanded-free-returns-tooltip');
         tooltip.style.display = "none";
       }
@@ -48,6 +48,14 @@ export function Product(){
                 expandedDropdown[i].style.display = ("none");
             }
         }
+    }
+
+    const getShippingDay = () => {
+        let shippingDate = new Date();
+        shippingDate.setDate(shippingDate.getDate()+4);
+        const months = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        return `${days[shippingDate.getDay()]}, ${months[shippingDate.getMonth()]} ${shippingDate.getDate()}`;
     }
 
     return(
@@ -163,6 +171,7 @@ export function Product(){
                             <i id="report-incorrect-product-info-icon"></i>
                             Report incorrect product information.
                         </span>
+                        <hr class="top-product-UI-bottom-divider"></hr>
                     </div>
                 </section>
                 <section class="top-product-UI-right-col">
@@ -185,31 +194,34 @@ export function Product(){
                                 <object name="free-returns-tooltip-icon" id="free-returns-tooltip-icon" src="trans.png"></object>
                                 </span>
                                 <div id="expanded-free-returns-tooltip">
-                            <div id="free-returns-tooltip-header">
-                            <h2 id="free-returns-tooltip-header-label"><strong>Return this item for free</strong></h2>
-                                <span role="button" className="free-returns-tooltip-close"  onClick={closeTooltip}>
-                                <object src="./trans.png" className="modal-close-image"> </object>
-                                </span> 
-                            </div>
-                            <span id="free-returns-tooltip-content">Free returns are available for the shipping address you chose. You can return the item for any reason in new and unused condition: no shipping charges</span>
-                            <span id="learn-more-link">Learn more about free returns.</span>
-                                <div class="free-returns-collapsible-wrapper">
-                                <input id="free-returns-collapsible" class="toggle" type="checkbox" />
-                                <label for="free-returns-collapsible" class="lbl-toggle" id="free-returns-collapsible-label">
-                                    <object name="free-returns-tooltip-inner-icon" id="free-returns-tooltip-inner-icon" src="trans.png"></object>
-                                    How to return the item?
-                                </label>
-                                <div class="free-returns-collapsible-content">
-                                    <div id="free-returns-collapsible-content-inner">
-                                        <ol id="free-returns-expandable-tooltip">
-                                            <li>Go to your orders and start the return</li>
-                                            <li>Select the return method</li>
-                                            <li>Ship it!</li>
-                                        </ol>
+                                    <div id="free-returns-tooltip-header">
+                                    <h2 id="free-returns-tooltip-header-label"><strong>Return this item for free</strong></h2>
+                                        <span role="button" className="free-returns-tooltip-close"  onClick={closeTooltip}>
+                                        <object src="./trans.png" className="modal-close-image"> </object>
+                                        </span> 
+                                    </div>
+                                    <span id="free-returns-tooltip-content">Free returns are available for the shipping address you chose. You can return the item for any reason in new and unused condition: no shipping charges</span>
+                                    <span id="learn-more-link">Learn more about free returns.</span>
+                                    <div class="free-returns-collapsible-wrapper">
+                                        <input id="free-returns-collapsible" class="toggle" type="checkbox" />
+                                        <label for="free-returns-collapsible" class="lbl-toggle" id="free-returns-collapsible-label">
+                                            <object name="free-returns-tooltip-inner-icon" id="free-returns-tooltip-inner-icon" src="trans.png"></object>
+                                            How to return the item?
+                                        </label>
+                                        <div class="free-returns-collapsible-content">
+                                            <div id="free-returns-collapsible-content-inner">
+                                                <ol id="free-returns-expandable-tooltip">
+                                                    <li>Go to your orders and start the return</li>
+                                                    <li>Select the return method</li>
+                                                    <li>Ship it!</li>
+                                                </ol>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
+                            <div id="buy-box-row-6">
+                                FREE Delivery by <span id="buy-box-delivery-date">{getShippingDay()}</span> for Prime members
                             </div>
                         </div>
                     </div>

@@ -126,6 +126,8 @@
   display: block;
 }
 
+/*Col 2*/
+
 .top-product-UI-center-col #product-title {
   font-size: 28px;
   line-height: 36px;
@@ -150,6 +152,12 @@
 
 #byline-link {
   color: #007185;
+}
+
+#byline-link:hover{
+    color: #d45704;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 #byline-description {
@@ -714,4 +722,14 @@
   text-decoration: underline;
   text-decoration-color: #c7511f;
   color: #c7511f;
+}
+
+#buy-box-row-6{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+#buy-box-delivery-date{
+    font-weight: 700;
 }
