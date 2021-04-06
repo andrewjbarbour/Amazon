@@ -511,6 +511,11 @@
     font-weight: 700;
 }
 
+#read-more-collapsible-top-content{
+    margin-top: -10px;
+    font-size: 14px;
+}
+
 .expanded-product-description-dropdown{
     display: none;
 }

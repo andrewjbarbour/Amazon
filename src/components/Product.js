@@ -25,7 +25,7 @@ export function Product(){
       const rotateDropdownSelector = () => {
         const dropdownSelectorIcon = document.getElementById('dropdown-selector-icon');
         if(dropDownToggle===0){
-            dropdownSelectorIcon.style.transform = "translateY(388px) rotate(270deg)";
+            dropdownSelectorIcon.style.transform = "translateY(469px) rotate(270deg)";
             setDropDownToggle(1);
         }
         else{       
@@ -130,6 +130,11 @@ export function Product(){
                         <div class="read-more-wrap-collapsible">
                             <i id="dropdown-selector-icon"></i>   
                             <input id="read-more-collapsible" class="toggle" type="checkbox" onClick={rotateDropdownSelector} />
+                            <div id="read-more-collapsible-top-content" class="expanded-product-description-dropdown">
+                                - A 4-step framework for solving any system design interview question.
+                                <br/>- 16 real system design interview questions with detailed solutions.
+                                <br/>- 188 diagrams to visually explain how different systems work.
+                            </div>
                             <ul id="read-more-collapsible-list" class="expanded-product-description-dropdown">
                                 <li id="read-more-collapsible-list-header">Table Of Contents</li>
                                 <li>Chapter 1: Scale From Zero To Millions Of Users</li>
@@ -151,10 +156,6 @@ export function Product(){
                             </ul>
                             <label for="read-more-collapsible" class="lbl-toggle" id="read-more-collapsible-label" onClick={toggleDropdownContent}>{toggleDropdown2}</label>
                             <div class="read-more-collapsible-content">
-                            - A 4-step framework for solving any system design interview question.
-                            <br/>- 16 real system design interview questions with detailed solutions.
-                            <br/>- 188 diagrams to visually explain how different systems work.
-                            
                             </div>
                         </div>
                         </div>
