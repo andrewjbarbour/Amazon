@@ -614,6 +614,7 @@
 }
 
 #buy-box-price-details-link:hover {
+  text-decoration: underline;
   color: #d45704;
   cursor: pointer;
 }
@@ -732,4 +733,16 @@
 
 #buy-box-delivery-date{
     font-weight: 700;
+}
+
+#buy-box-row-7{
+    font-size: 14px;
+    color: #007185;
+}
+
+#buy-box-row-7:hover{
+    text-decoration: underline;
+    text-decoration-color: #c7511f;
+    color: #c7511f;
+    cursor: pointer;
 }

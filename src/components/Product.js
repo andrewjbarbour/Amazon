@@ -223,6 +223,9 @@ export function Product(){
                             <div id="buy-box-row-6">
                                 FREE Delivery by <span id="buy-box-delivery-date">{getShippingDay()}</span> for Prime members
                             </div>
+                            <div id="buy-box-row-7">
+                                Details
+                            </div>
                         </div>
                     </div>
                 </section>
