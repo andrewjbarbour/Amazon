@@ -159,6 +159,10 @@ export function Product(){
                             </div>
                         </div>
                         </div>
+                        <span id="report-incorrect-product-info">
+                            <i id="report-incorrect-product-info-icon"></i>
+                            Report incorrect product information.
+                        </span>
                     </div>
                 </section>
                 <section class="top-product-UI-right-col">

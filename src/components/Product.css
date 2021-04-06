@@ -520,6 +520,34 @@
     display: none;
 }
 
+#report-incorrect-product-info{
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007185;
+}
+
+#report-incorrect-product-info:hover{
+    cursor: pointer;
+    color: #c7511f;
+    text-decoration: underline;
+    text-decoration-color: #c7511f;
+}
+
+#report-incorrect-product-info-icon{
+    display: inline-block;
+    width: 13px;
+    height: 11px;
+    margin-right: 5px;
+    background-image: url('./product-info-sprite.png');
+    background-position: 0 0;
+}
+
+#report-incorrect-product-info:hover #report-incorrect-product-info-icon{
+    background-position: 14px 0px;
+}
+
+
 /*Col 3*/
 
 .buy-box {
