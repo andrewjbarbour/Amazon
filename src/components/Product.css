@@ -1,5 +1,6 @@
 .Product {
   font-family: Amazon Ember, Arial, sans-serif;
+  color: #0f1111;
   overflow: hidden;
 }
 
@@ -745,4 +746,18 @@
     text-decoration-color: #c7511f;
     color: #c7511f;
     cursor: pointer;
+}
+
+#buy-box-row-8{
+    color: #007600;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 22px;
+    text-rendering: optimizeLegibility;
+}
+
+#buy-box-row-9{
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
 }

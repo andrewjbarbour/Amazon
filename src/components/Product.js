@@ -226,6 +226,12 @@ export function Product(){
                             <div id="buy-box-row-7">
                                 Details
                             </div>
+                            <div id="buy-box-row-8">
+                                Available to ship in 1-2 <br/> days.
+                            </div>
+                            <div id="buy-box-row-9">
+                                As an alternative, the Kindle eBook is available now and can be read on any device with the free Kindle app.
+                            </div>
                         </div>
                     </div>
                 </section>
