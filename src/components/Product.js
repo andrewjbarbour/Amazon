@@ -230,7 +230,26 @@ export function Product(){
                                 Available to ship in 1-2 <br/> days.
                             </div>
                             <div id="buy-box-row-9">
-                                As an alternative, the Kindle eBook is available now and can be read on any device with the free Kindle app.
+                                As an alternative, the <span id="kindle-ebook-upsell-link">Kindle eBook</span> is available now and can be read on any device with the free Kindle app.
+                            </div>
+                            <div id="buy-box-row-10">
+                            <select id="cart-item-quantity-selector">
+                                <option value="1" selected disabled hidden>Qty: 1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10+</option>
+                                <option value="0">Delete</option>
+                            </select>
+                            </div>
+                            <div id="buy-box-row-11">
+                                <input value="Add to Cart" name="place-order-button" id="place-order-button" type="submit" />
                             </div>
                         </div>
                     </div>

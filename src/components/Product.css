@@ -761,3 +761,29 @@
     line-height: 20px;
     color: #0F1111;
 }
+
+#kindle-ebook-upsell-link{
+    color: #007185;
+}
+
+#kindle-ebook-upsell-link:hover{
+    text-decoration: underline;
+    text-decoration-color: #c7511f;
+    color: #c7511f;
+    cursor: pointer; 
+}
+
+#buy-box-row-10{
+    margin-top: 10px;
+}
+
+.Product #place-order-button{
+    width: 230px;
+    height: 31px;
+    border-radius: 19px;
+    font-size: 14px;
+}
+
+.Product #place-order-button:hover{
+    background: #F7CA00;
+}
