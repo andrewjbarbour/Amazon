@@ -6,6 +6,7 @@ import lookInside from './look-inside.png';
 import productMain from './product-2-main-image.jpg';
 import productSmall1 from './product-2-small-1.jpg';
 import productSmall2 from './product-2-small-2.jpg';
+import securedSsl from './secured-ssl.png';
 
 export function Product(){
 
@@ -253,6 +254,12 @@ export function Product(){
                             </div>
                             <div id="buy-box-row-12">
                                 <input value="Buy Now" name="buy-now-button" id="buy-now-button" type="submit" />
+                            </div>
+                            <div id="buy-box-row-13">
+                                <div id="secured-ssl-wrapper">
+                                    <img id="buy-box-secured-ssl-icon" src={securedSsl}></img>
+                                    <span id="buy-box-secure-transaction-link">Secure Transaction</span>
+                                </div>
                             </div>
                         </div>
                     </div>

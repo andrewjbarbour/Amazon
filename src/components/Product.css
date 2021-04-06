@@ -816,3 +816,30 @@
     border-color: #FA8900;
 
 }
+
+#buy-box-row-13{
+    margin-top: 15px;
+}
+
+#buy-box-secured-ssl-icon{
+    width: 11.42px;
+    height: 15px;
+    vertical-align: center;
+}
+
+#buy-box-secure-transaction-link{
+    font-size: 14px;
+    color: #007185;
+    margin-left: 15px;
+}
+
+#secured-ssl-wrapper:hover #buy-box-secure-transaction-link{
+    text-decoration: underline;
+    text-decoration-color: #c7511f;
+    color: #c7511f;
+    cursor: pointer;
+}
+
+#secured-ssl-wrapper:hover{
+    cursor: pointer;
+}
