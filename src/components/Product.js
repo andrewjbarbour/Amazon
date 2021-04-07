@@ -7,6 +7,7 @@ import productMain from './product-2-main-image.jpg';
 import productSmall1 from './product-2-small-1.jpg';
 import productSmall2 from './product-2-small-2.jpg';
 import securedSsl from './secured-ssl.png';
+import locationPin from './location-pin.png';
 
 export function Product(){
 
@@ -274,7 +275,12 @@ export function Product(){
                                 <label id="gift-receipt-checkbox-label" for="gift-receipt-checkbox">Add a gift receipt for easy </label>
                                 <span id="gift-receipt-returns">returns</span>
                             </div>
-                            <hr id="buy-box-bottom-divider"></hr>
+                            <hr class="buy-box-bottom-divider"></hr>
+                            <div id="buy-box-row-17">
+                                <img id="location-pin" name="location-pin" alt="location-pin" src={locationPin}></img>
+                                <span id="buy-box-delivery-address">Deliver to Andrew - Hillsboro 97124</span>
+                            </div>
+                            <hr class="buy-box-bottom-divider"></hr>
                         </div>
                     </div>
                 </section>

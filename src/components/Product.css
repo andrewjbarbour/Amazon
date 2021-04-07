@@ -889,7 +889,7 @@
     margin-left: 20px;
 }
 
-#buy-box-bottom-divider{
+.buy-box-bottom-divider{
     box-sizing: border-box;
     background-color: transparent;
     height: 1px;
@@ -897,4 +897,19 @@
     border: 0;
     border-top: 1px solid #e7e7e7;
     display: block;
+}
+
+#buy-box-delivery-address{
+    font-size: 12px;
+    margin-left: 5px;
+    color: #007185;
+}
+
+#location-pin{
+    transform: translateY(3px);
+}
+
+#buy-box-delivery-address:hover{
+    color: #c7511f;
+    cursor: pointer;
 }
