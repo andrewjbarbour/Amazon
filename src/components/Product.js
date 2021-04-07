@@ -175,6 +175,9 @@ export function Product(){
                         </span>
                         <hr class="top-product-UI-bottom-divider"></hr>
                     </div>
+                    <div id="product-details-bar">
+
+                    </div>
                 </section>
                 <section class="top-product-UI-right-col">
                     <div class="buy-box">
@@ -281,6 +284,11 @@ export function Product(){
                                 <span id="buy-box-delivery-address">Deliver to Andrew - Hillsboro 97124</span>
                             </div>
                             <hr class="buy-box-bottom-divider"></hr>
+                            <div id="buy-box-row-17">
+                                <input value="Add to List" name="add-to-wishlist-button" id="add-to-wishlist-button" type="submit">
+                                </input>
+                                <i id="add-to-wishlist-dropdown-icon"></i>
+                            </div>
                         </div>
                     </div>
                 </section>

@@ -778,7 +778,7 @@
 }
 
 .Product #place-order-button{
-    margin-top: 25px;
+    margin-top: 20px;
     width: 230px;
     height: 31px;
     margin-left: 0px;
@@ -797,7 +797,7 @@
     justify-content: center;
     line-height: 19px;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 230px;
     text-align: center;
     background: #FFA41C;
@@ -912,4 +912,40 @@
 #buy-box-delivery-address:hover{
     color: #c7511f;
     cursor: pointer;
+}
+
+#add-to-wishlist-button{
+    width: 232px;
+    height: 31px;
+    border-radius: 3px 0 0 3px;
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    border: 1px solid;
+    border-top-color: rgb(173, 177, 184);
+    border-right-color: rgb(162, 166, 172);
+    border-bottom-color: rgb(141, 144, 150);
+    border-left-color:rgb(162, 166, 172);
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    font-size: 13.3px;
+    text-align: left;
+    text-indent: 5px;
+    margin-top: 4px;
+}
+
+#add-to-wishlist-button:hover{
+    cursor: pointer;
+}
+
+#add-to-wishlist-dropdown-icon{
+    background-image: url('./amazon-sprite-map.png');
+    background-position: -7px -102px;
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    transform: translateY(15px) translateX(-20px);
+
+}
+
+#product-details-bar{
+    width: 774px;
+    height: 120px;
 }
