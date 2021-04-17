@@ -527,9 +527,15 @@ td{
     padding-bottom: 2px;
 }
 
+.order-summary-table-right-cell{
+    position: absolute;
+    right: 8%;
+}
+
 .place-order-extra-small-divider{
+    position: absolute;
     opacity: .25;
-    float: right;
+    left: 70%;
     margin-right: -45px;
     width: 61px;
     padding-bottom: 0px;
