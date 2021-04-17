@@ -452,3 +452,18 @@
     border: 1px solid #fff;
     cursor: pointer;
   }
+
+  .react-router-link{
+    text-decoration: inherit;
+  }
+  
+  .react-router-link:visited{
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .react-router-link:hover{
+    min-width: inherit;
+    border: inherit;
+    display: inherit;
+  }

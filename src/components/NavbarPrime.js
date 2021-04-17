@@ -92,7 +92,7 @@ export function NavbarPrime(){
                         <object name="nav-flag-flyout" id="nav-flag-flyout" src="./trans.png"></object>
                         <object name="nav-flag-flyout-dropdown-icon" id="nav-flag-flyout-dropdown-icon" src="./trans.png"></object>
                     </div>
-                    <Link to="/signin">
+                    <Link to="/signin" class="react-router-link">
                     <div id="user-account-nav">
                         <span id="user-greeting"> Hello, Andrew</span>
                         <span id="user-accounts-and-lists">Accounts & Lists            
