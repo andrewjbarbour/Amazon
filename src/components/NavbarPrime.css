@@ -34,6 +34,7 @@
   }
   
   #amazon-prime-logo-extension {
+    display: inline-block;
     width: 67px;
     height: 20px;
     margin-top: 34px;
@@ -129,12 +130,8 @@
     font-size: 14px;
     color: #0f1111;
   }
-
-  #search-button-wrapper{
-    z-index: 9000;
-  }
   
-  #nav-search-submit-button {
+  #nav-search-submit-button{
     width: 45px;
     height: 39px;
     margin-top: -3px;
@@ -467,3 +464,4 @@
     border: inherit;
     display: inherit;
   }
+

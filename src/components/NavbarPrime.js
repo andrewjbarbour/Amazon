@@ -8,8 +8,8 @@ export function NavbarPrime(){
                 <div id="nav-belt">
                     <Link to="/">
                     <div id="nav-logo">
-                        <object name="amazon-front-page-logo" id="amazon-front-page-logo" src="./trans.png"></object>
-                        <object name="amazon-prime-logo-extension" id="amazon-prime-logo-extension" src="./trans.png"></object>
+                        <i name="amazon-front-page-logo" id="amazon-front-page-logo"></i>
+                        <i name="amazon-prime-logo-extension" id="amazon-prime-logo-extension"></i>
                     </div>
                     </Link>
                     <div id="nav-global-location">
@@ -81,10 +81,7 @@ export function NavbarPrime(){
                             </select>
                          
                              <input name="main-nav-search-bar" id="main-nav-search-bar" type="text"></input>
-                            <Link to="/search">
-                            <div id="search-button-wrapper">
-                            <object name="nav-search-submit-button" id="nav-search-submit-button" src="./trans.png" alt="nav-search-submit-button"></object>
-                            </div>
+                            <Link to="/search" id="nav-search-submit-button">
                             </Link>
                         </div>
                     </div>
@@ -92,7 +89,7 @@ export function NavbarPrime(){
                         <object name="nav-flag-flyout" id="nav-flag-flyout" src="./trans.png"></object>
                         <object name="nav-flag-flyout-dropdown-icon" id="nav-flag-flyout-dropdown-icon" src="./trans.png"></object>
                     </div>
-                    <Link to="/signin" class="react-router-link">
+                    <Link to="/signin" id="signin-link" class="react-router-link">
                     <div id="user-account-nav">
                         <span id="user-greeting"> Hello, Andrew</span>
                         <span id="user-accounts-and-lists">Accounts & Lists            
