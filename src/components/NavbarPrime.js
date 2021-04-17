@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './NavbarPrime.css';
 
 export function NavbarPrime({productCount=0}){
-    let [cartCount, setCartCount] = useState(productCount);
 
     return(
         <header id="front-page-header">
