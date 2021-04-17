@@ -10,7 +10,7 @@ import securedSsl from './secured-ssl.png';
 import locationPin from './location-pin.png';
 
 export function Product(){
-
+    let [cartCount, setCartCount] = useState(0);
     const [dropDownToggle, setDropDownToggle] = useState(0);
     let [toggleDropdown2, setToggleDropdown2] = useState("Read more");
 
@@ -60,9 +60,13 @@ export function Product(){
         return `${days[shippingDate.getDay()]}, ${months[shippingDate.getMonth()]} ${shippingDate.getDate()}`;
     }
 
+    const addToCart = () => {
+        setCartCount(prevCartCount => prevCartCount + 1);
+    }
+
     return(
         <div class="Product">
-            <NavbarPrime />
+            <NavbarPrime productCount = {cartCount}/>
             <section id="upper-product-bar">
                 <a class="upper-product-bar-link" id="upper-product-bar-link-1"><span class="product-bar-link-text">Books</span></a>
                 <a class="upper-product-bar-link">Advanced Search</a>
@@ -254,7 +258,7 @@ export function Product(){
                             </select>
                             </div>
                             <div id="buy-box-row-11">
-                                <input value="Add to Cart" name="place-order-button" id="place-order-button" type="submit" />
+                                <input value="Add to Cart" name="place-order-button" id="place-order-button" type="submit" onClick={() => {addToCart()}} />
                             </div>
                             <div id="buy-box-row-12">
                                 <input value="Buy Now" name="buy-now-button" id="buy-now-button" type="submit" />

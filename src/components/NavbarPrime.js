@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import './NavbarPrime.css';
 
-export function NavbarPrime(){
+export function NavbarPrime({productCount=0}){
+    let [cartCount, setCartCount] = useState(productCount);
+
     return(
         <header id="front-page-header">
                 <div id="nav-belt">
@@ -103,7 +105,7 @@ export function NavbarPrime(){
                     </div>
                     <Link to="/place-order" class="react-router-link">
                     <div id="nav-cart">
-                        <span id="nav-cart-count">0</span>
+                        <span id="nav-cart-count">{productCount}</span>
                         <object id="nav-cart-sprite" name="nav-cart-sprite" alt="nav-cart-sprite" src="trans.png">
                             <span id="nav-cart-sprite-text">Cart</span>     
                         </object>
