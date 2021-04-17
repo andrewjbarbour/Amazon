@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './PlaceOrderPrime.css';
 import amazonLockerPin from './locker-pin.png';
 import visaLogo from './visa.gif';
@@ -61,6 +61,13 @@ export function PlaceOrderPrime(){
             placeOrderButtonTop.style.marginLeft = "8%";
             placeOrderButtonTop.style.marginTop = "15px";
         }    
+      }
+
+      const [price, setPrice] = useState(24.99);
+      const [quantity, setQuantity] = useState(1);
+
+      const handleCartChange = (event) => {
+          setQuantity(event.target.value);
       }
 
       useEffect(() => {
@@ -178,7 +185,7 @@ export function PlaceOrderPrime(){
                                 </div>
                             </div>
                         </div>
-                            <select id="cart-item-quantity-selector">
+                            <select id="cart-item-quantity-selector" onChange={handleCartChange}>
                                 <option value="1" selected disabled hidden>Qty: 1</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -249,7 +256,7 @@ export function PlaceOrderPrime(){
                         <table id="order-summary-table">
                             <tr>
                                 <td>Items:</td>
-                                <td class="order-summary-table-right-cell">$17.49</td>
+                                <td class="order-summary-table-right-cell">{`\$${(quantity * price).toFixed(2)}`}</td>
                             </tr>
                             <tr id="order-summary-table-row1">
                                 <td>Shipping & handling:</td>
@@ -261,7 +268,7 @@ export function PlaceOrderPrime(){
                             </tr>
                             <tr id="order-summary-table-row3">
                                 <td>Total before tax:</td>
-                                <td class="order-summary-table-right-cell">$17.49</td>
+                                <td class="order-summary-table-right-cell">{`\$${(quantity * price).toFixed(2)}`}</td>
                             </tr>
                             <tr>
                                 <td>Estimated tax to be collected:</td>
@@ -272,7 +279,7 @@ export function PlaceOrderPrime(){
                         <table id="order-total-table">
                             <tr>
                                 <td>Order Total:</td>
-                                <td id="order-total-right-cell">$17.49</td>
+                                <td id="order-total-right-cell">{`\$${(quantity * price).toFixed(2)}`}</td>
                             </tr>
                         </table>
                         <div id="shipping-costs-box">

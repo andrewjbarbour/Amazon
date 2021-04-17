@@ -7,7 +7,11 @@ export function NavbarPrime({productCount=0}){
     return(
         <header id="front-page-header">
                 <div id="nav-belt">
-                    <Link to="/">
+                    <Link 
+                        to={{
+                        pathname:"/",
+                        state: {productCount: productCount}
+                    }}>
                     <div id="nav-logo">
                         <i name="amazon-front-page-logo" id="amazon-front-page-logo"></i>
                         <i name="amazon-prime-logo-extension" id="amazon-prime-logo-extension"></i>
