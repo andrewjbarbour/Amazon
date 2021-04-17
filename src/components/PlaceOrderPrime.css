@@ -45,7 +45,8 @@
 }
 
 #secured-ssl-icon{
-    margin-left: 26%;
+    position: absolute;
+    right: 16%;
     cursor:pointer;
 }
 

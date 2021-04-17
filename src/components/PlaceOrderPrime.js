@@ -75,6 +75,16 @@ export function PlaceOrderPrime(){
         return `\$${(quantity * price).toFixed(2)}`;
     }
 
+    const getItemCount = () => {
+        if(parseInt(quantity)===1){
+            return "1 item";
+        }
+        else{
+            return `${quantity} items`;
+        }
+        
+    }
+
     const handleCartChange = (event) => {
         setQuantity(event.target.value);
       }
@@ -88,7 +98,7 @@ export function PlaceOrderPrime(){
         <div class="PlaceOrderPrime">
             <header id="place-order-prime-header">
                 <object src='trans.png' id="amazon-prime-logo" name="amazon-prime-logo"></object>
-                <h1>Checkout <span class="cart-item-parenthesis">(</span><a class="cart-item-count">1 item</a><span class="cart-item-parenthesis">)</span></h1>
+                <h1>Checkout <span class="cart-item-parenthesis">(</span><a class="cart-item-count">{getItemCount()}</a><span class="cart-item-parenthesis">)</span></h1>
                 <img name="secured-ssl-icon" id="secured-ssl-icon" alt="secured-ssl-icon" src={securedSsl} ></img>
             </header>
             <form id="place-order-prime-wrapper">
