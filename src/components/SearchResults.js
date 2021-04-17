@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import './SearchResults.css';
 import NavbarPrime from './NavbarPrime';
 import Footer from './Footer';
@@ -258,10 +259,14 @@ export function SearchResults(){
                                 </div>
                             <div class="search-results-inner-wrapper">
                                 <div class="search-results-inner-col-left" id="search-results-inner-col-left-row-2">
+                                    <Link to="/product">
                                     <img class="search-result-img" id="search-result-img-3" src={searchResult3}></img>
+                                    </Link>
                                 </div>
                                 <div class="search-results-inner-col-right" id="search-results-inner-col-right-row-2">
+                                    <Link to="/product" class="react-router-link">
                                     <span class="search-results-inner-col-header">System Design Interview - An Insider's Guide</span>
+                                    </Link>
                                     <span class="search-results-inner-col-id">by <span class="inner-col-id-link">Alex Xu</span> <span class="inner-col-divider">|</span> Jun 10, 2020</span>
                                     <div class="star-wrapper">
                                         <i class="star-icon-4-5"></i>

@@ -840,3 +840,12 @@
 .next-nav-button:hover{
   background: linear-gradient(to bottom,#e7eaf0,#d9dce1);
 }
+
+.react-router-link{
+  text-decoration: inherit;
+}
+
+.react-router-link:visited{
+  color: inherit;
+  text-decoration: inherit;
+}

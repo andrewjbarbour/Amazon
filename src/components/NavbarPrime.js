@@ -79,8 +79,13 @@ export function NavbarPrime(){
                                 <option value="Video Games">Video Games</option>
                                 <option value="Whole Foods Market">Whole Foods Market</option>
                             </select>
+                         
                              <input name="main-nav-search-bar" id="main-nav-search-bar" type="text"></input>
+                            <Link to="/search">
+                            <div id="search-button-wrapper">
                             <object name="nav-search-submit-button" id="nav-search-submit-button" src="./trans.png" alt="nav-search-submit-button"></object>
+                            </div>
+                            </Link>
                         </div>
                     </div>
                     <div id="regional-language-box">
