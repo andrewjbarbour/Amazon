@@ -1,14 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavbarPrime.css';
 
 export function NavbarPrime(){
     return(
         <header id="front-page-header">
                 <div id="nav-belt">
+                    <Link to="/">
                     <div id="nav-logo">
                         <object name="amazon-front-page-logo" id="amazon-front-page-logo" src="./trans.png"></object>
                         <object name="amazon-prime-logo-extension" id="amazon-prime-logo-extension" src="./trans.png"></object>
                     </div>
+                    </Link>
                     <div id="nav-global-location">
                         <object name="global-location-sprite" id="global-location-sprite" src="./trans.png"></object>
                         <div id="global-delivery">
@@ -84,12 +87,14 @@ export function NavbarPrime(){
                         <object name="nav-flag-flyout" id="nav-flag-flyout" src="./trans.png"></object>
                         <object name="nav-flag-flyout-dropdown-icon" id="nav-flag-flyout-dropdown-icon" src="./trans.png"></object>
                     </div>
+                    <Link to="/signin">
                     <div id="user-account-nav">
                         <span id="user-greeting"> Hello, Andrew</span>
                         <span id="user-accounts-and-lists">Accounts & Lists            
                             <object name="user-account-nav-dropdown-icon" id="user-account-nav-dropdown-icon" src="./trans.png"></object>
                         </span>                    
                     </div>
+                    </Link>
                     <div id="returns-and-orders-nav">
                         <span id="front-page-returns-nav">Returns</span>
                         <span id="front-page-orders-nav">& Orders</span>

@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import FrontPage from './components/FrontPage';
 import SignIn from './components/SignIn';
 import SearchResults from './components/SearchResults';
@@ -10,9 +11,16 @@ import PlaceOrderPrime from './components/PlaceOrderPrime';
 
 function App() {
   return (
-    <div className="App">
-      <Product/>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={FrontPage} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/search" component={SearchResults} />
+          <Route path="/product" component={Product} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

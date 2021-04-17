@@ -176,7 +176,7 @@ export function Product(){
                         <hr class="top-product-UI-bottom-divider"></hr>
                     </div>
                     <div id="product-details-bar">
-
+                        
                     </div>
                 </section>
                 <section class="top-product-UI-right-col">
