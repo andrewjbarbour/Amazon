@@ -18,6 +18,9 @@ function App() {
           <Route path="/signin" component={SignIn} />
           <Route path="/search" component={SearchResults} />
           <Route path="/product" component={Product} />
+          <Route path="/payment" component={Payment} />
+          <Route path="/shipping" component = {Checkout} />
+          <Route path="/place-order" component = {PlaceOrderPrime} />
         </Switch>
       </div>
     </Router>

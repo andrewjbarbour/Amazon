@@ -101,13 +101,14 @@ export function NavbarPrime(){
                         <span id="front-page-returns-nav">Returns</span>
                         <span id="front-page-orders-nav">& Orders</span>
                     </div>
+                    <Link to="/place-order" class="react-router-link">
                     <div id="nav-cart">
                         <span id="nav-cart-count">0</span>
                         <object id="nav-cart-sprite" name="nav-cart-sprite" alt="nav-cart-sprite" src="trans.png">
                             <span id="nav-cart-sprite-text">Cart</span>     
                         </object>
-                        
                     </div>
+                    </Link>
                 </div>
                 <div id="nav-belt-lower">
                     <div id="sidebar-nav">
