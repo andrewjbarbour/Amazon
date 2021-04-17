@@ -44,12 +44,12 @@ export function PlaceOrderPrime(){
         tooltip.style.display = "inline-block";
       }
     
-      const closeTooltip = (event) => {
+    const closeTooltip = (event) => {
         const tooltip = document.getElementById('expanded-free-returns-tooltip');
         tooltip.style.display = "none";
       }
 
-      const handleScroll = event => {
+    const handleScroll = event => {
         const placeOrderButtonTop = document.getElementById('place-order-button-top');
         if(window.scrollY > 150){
             placeOrderButtonTop.style.position = "fixed";
@@ -61,18 +61,26 @@ export function PlaceOrderPrime(){
             placeOrderButtonTop.style.marginLeft = "8%";
             placeOrderButtonTop.style.marginTop = "15px";
         }    
+    }
+
+    const selectOptions = useState([]);
+    for(let i = 1; i<10; i++){
+        selectOptions.push( <option value={i}>{i}</option>);
+    }
+
+    const [price, setPrice] = useState(24.99);
+    const [quantity, setQuantity] = useState(1);
+
+    const getPrice = () => {
+        return `\$${(quantity * price).toFixed(2)}`;
+    }
+
+    const handleCartChange = (event) => {
+        setQuantity(event.target.value);
       }
 
-      const [price, setPrice] = useState(24.99);
-      const [quantity, setQuantity] = useState(1);
-
-      const handleCartChange = (event) => {
-          setQuantity(event.target.value);
-      }
-
-      useEffect(() => {
+    useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-        
       }, [handleScroll])
     
 
@@ -187,15 +195,7 @@ export function PlaceOrderPrime(){
                         </div>
                             <select id="cart-item-quantity-selector" onChange={handleCartChange}>
                                 <option value="1" selected disabled hidden>Qty: 1</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
+                                {selectOptions}
                                 <option value="10">10+</option>
                                 <option value="0">Delete</option>
                             </select>
@@ -256,7 +256,7 @@ export function PlaceOrderPrime(){
                         <table id="order-summary-table">
                             <tr>
                                 <td>Items:</td>
-                                <td class="order-summary-table-right-cell">{`\$${(quantity * price).toFixed(2)}`}</td>
+                                <td class="order-summary-table-right-cell">{getPrice()}</td>
                             </tr>
                             <tr id="order-summary-table-row1">
                                 <td>Shipping & handling:</td>
@@ -268,7 +268,7 @@ export function PlaceOrderPrime(){
                             </tr>
                             <tr id="order-summary-table-row3">
                                 <td>Total before tax:</td>
-                                <td class="order-summary-table-right-cell">{`\$${(quantity * price).toFixed(2)}`}</td>
+                                <td class="order-summary-table-right-cell">{getPrice()}</td>
                             </tr>
                             <tr>
                                 <td>Estimated tax to be collected:</td>
@@ -279,7 +279,7 @@ export function PlaceOrderPrime(){
                         <table id="order-total-table">
                             <tr>
                                 <td>Order Total:</td>
-                                <td id="order-total-right-cell">{`\$${(quantity * price).toFixed(2)}`}</td>
+                                <td id="order-total-right-cell">{getPrice()}</td>
                             </tr>
                         </table>
                         <div id="shipping-costs-box">
