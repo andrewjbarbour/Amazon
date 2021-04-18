@@ -1,10 +1,15 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import './NavbarPrime.css';
 
 export function NavbarPrime({productCount=0}){
+    const [search, setSearch] = useState(false);
+    const handleSearch = () => {
+       setSearch(true);
+    }
 
     return(
+        search ? <Redirect to="/search"/> : 
         <header id="front-page-header">
                 <div id="nav-belt">
                     <Link 
@@ -84,8 +89,9 @@ export function NavbarPrime({productCount=0}){
                                 <option value="Video Games">Video Games</option>
                                 <option value="Whole Foods Market">Whole Foods Market</option>
                             </select>
-                         
-                             <input name="main-nav-search-bar" id="main-nav-search-bar" type="text"></input>
+                            <form onSubmit={handleSearch}>
+                             <input name="main-nav-search-bar" id="main-nav-search-bar" type="text" ></input>
+                             </form>
                             <Link to="/search" id="nav-search-submit-button">
                             </Link>
                         </div>
