@@ -4,7 +4,7 @@ import './PlaceOrderPrime.css';
 import amazonLockerPin from './locker-pin.png';
 import visaLogo from './visa.gif';
 import securedSsl from './secured-ssl.png';
-import checkoutItemImage from './checkout-item-image.jpg';
+import checkoutProductImage from './checkout-product-image.jpg';
 import amazonGiftButton from './amazon-gift-button.png';
 
 export function PlaceOrderPrime(){
@@ -169,12 +169,12 @@ export function PlaceOrderPrime(){
                     </div>
                     <div id="cart-items-box-inner-columns-wrapper">
                         <div id="cart-items-box-inner-col-1">
-                            <img id="checkout-item-image" name="checkout-item-image" src={checkoutItemImage}></img>
+                            <img id="checkout-item-image" name="checkout-item-image" src={checkoutProductImage}></img>
                         </div>
                         <div id="cart-items-box-inner-col-2">
-                            <span id="place-order-cart-item-title"><strong>A Desolation Called Peace (Teixcalaan, 2)</strong></span>
-                            <span id="place-order-data-id">by Martine, Arkady</span>
-                            <span id="place-order-price">$17.49</span>
+                            <span id="place-order-cart-item-title"><strong>System Design Interview - An insider's guide, Second Edition</strong></span>
+                            <span id="place-order-data-id">by Xu, Alex</span>
+                            <span id="place-order-price">$24.99</span>
                             <object id="amazon-prime-mini-logo" name="amazon-prime-logo" alt="amazon-prime-logo" src="trans.jpeg"></object>
                             <span id="place-order-free-returns-tooltip" onClick={openTooltip}>
                                 FREE Returns
