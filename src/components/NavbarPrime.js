@@ -97,7 +97,12 @@ export function NavbarPrime({location, productCount=0}){
                             <form onSubmit={handleSearch}>
                              <input name="main-nav-search-bar" id="main-nav-search-bar" type="text" ></input>
                              </form>
-                            <Link to="/search" id="nav-search-submit-button">
+                            <Link   
+                                to={{
+                                pathname:"/search",
+                                state: {productCount: productCount}
+                                }} 
+                                id="nav-search-submit-button">
                             </Link>
                         </div>
                     </div>
