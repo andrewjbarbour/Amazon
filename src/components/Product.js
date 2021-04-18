@@ -61,7 +61,7 @@ export function Product(){
         return `${days[shippingDate.getDay()]}, ${months[shippingDate.getMonth()]} ${shippingDate.getDate()}`;
     }
 
-    const [newItems, setnewItems] = useState(0);
+    const [newItems, setnewItems] = useState(1);
 
 
     const addCartItems = (event) => {
