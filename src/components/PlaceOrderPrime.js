@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './PlaceOrderPrime.css';
 import amazonLockerPin from './locker-pin.png';
 import visaLogo from './visa.gif';
@@ -87,7 +88,7 @@ export function PlaceOrderPrime(){
 
     const handleCartChange = (event) => {
         setQuantity(event.target.value);
-      }
+    }
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -97,7 +98,9 @@ export function PlaceOrderPrime(){
     return(
         <div class="PlaceOrderPrime">
             <header id="place-order-prime-header">
-                <object src='trans.png' id="amazon-prime-logo" name="amazon-prime-logo"></object>
+                <Link to="/">
+                <i src='trans.png' id="amazon-prime-logo" name="amazon-prime-logo"></i>
+                </Link>
                 <h1>Checkout <span class="cart-item-parenthesis">(</span><a class="cart-item-count">{getItemCount()}</a><span class="cart-item-parenthesis">)</span></h1>
                 <img name="secured-ssl-icon" id="secured-ssl-icon" alt="secured-ssl-icon" src={securedSsl} ></img>
             </header>

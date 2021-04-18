@@ -16,6 +16,7 @@
 }
 
 #amazon-prime-logo{
+    display: inline-block;
     margin-left: 12%;
     background-image: url('./amazon-prime-sprite-map.png');
     background-position: -2px -168px;

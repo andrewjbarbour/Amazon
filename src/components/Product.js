@@ -60,8 +60,16 @@ export function Product(){
         return `${days[shippingDate.getDay()]}, ${months[shippingDate.getMonth()]} ${shippingDate.getDate()}`;
     }
 
+    const [newItems, setnewItems] = useState(0);
+
+
+    const addCartItems = (event) => {
+        setnewItems(parseInt(event.target.value));
+    }
+
+
     const addToCart = () => {
-        setCartCount(prevCartCount => prevCartCount + 1);
+        setCartCount(prevCartCount => prevCartCount + newItems);
     }
 
     return(
@@ -242,7 +250,7 @@ export function Product(){
                                 As an alternative, the <span id="kindle-ebook-upsell-link">Kindle eBook</span> is available now and can be read on any device with the free Kindle app.
                             </div>
                             <div id="buy-box-row-10">
-                            <select id="cart-item-quantity-selector">
+                            <select id="cart-item-quantity-selector" onChange={addCartItems}>
                                 <option value="1" selected disabled hidden>Qty: 1</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
