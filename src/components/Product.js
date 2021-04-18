@@ -270,7 +270,9 @@ export function Product(){
                                 <input value="Add to Cart" name="place-order-button" id="place-order-button" type="submit" onClick={() => {addToCart()}} />
                             </div>
                             <div id="buy-box-row-12">
-                                <Link to="place-order">
+                                <Link to={{
+                                    pathname:"/place-order",
+                                    state: {productCount: cartCount}}}>
                                 <input value="Buy Now" name="buy-now-button" id="buy-now-button" type="submit" />
                                 </Link>
                             </div>
