@@ -7,8 +7,7 @@ import securedSsl from './secured-ssl.png';
 import checkoutProductImage from './checkout-product-image.jpg';
 import amazonGiftButton from './amazon-gift-button.png';
 
-export function PlaceOrderPrime(){
-
+export function PlaceOrderPrime({initialQuantity=1}){
     const getShippingDate = () => {
         let shippingDate = new Date();
         shippingDate.setDate(shippingDate.getDate()+1);
@@ -70,7 +69,7 @@ export function PlaceOrderPrime(){
     }
 
     const [price, setPrice] = useState(24.99);
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(initialQuantity);
 
     const getPrice = () => {
         return `\$${(quantity * price).toFixed(2)}`;

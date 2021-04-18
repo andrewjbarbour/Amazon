@@ -1,4 +1,5 @@
-import {React, useState} from 'react';
+import { React, useState } from 'react';
+import { Link } from 'react-router-dom'; 
 import './Product.css';
 import NavbarPrime from './NavbarPrime';
 import Footer from './Footer';
@@ -269,7 +270,9 @@ export function Product(){
                                 <input value="Add to Cart" name="place-order-button" id="place-order-button" type="submit" onClick={() => {addToCart()}} />
                             </div>
                             <div id="buy-box-row-12">
+                                <Link to="place-order">
                                 <input value="Buy Now" name="buy-now-button" id="buy-now-button" type="submit" />
+                                </Link>
                             </div>
                             <div id="buy-box-row-13">
                                 <div id="secured-ssl-wrapper">
