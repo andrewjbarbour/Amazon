@@ -97,7 +97,10 @@ export function PlaceOrderPrime({location, initialQuantity=1}){
     return(
         <div class="PlaceOrderPrime">
             <header id="place-order-prime-header">
-                <Link to="/">
+                <Link to={{
+                    pathname: "/",
+                    state: {productCount: quantity
+                }}}>
                 <i src='trans.png' id="amazon-prime-logo" name="amazon-prime-logo"></i>
                 </Link>
                 <h1>Checkout <span class="cart-item-parenthesis">(</span><a class="cart-item-count">{getItemCount()}</a><span class="cart-item-parenthesis">)</span></h1>

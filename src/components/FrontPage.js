@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import './FrontPage.css';
 import Footer from './Footer';
 import NavbarPrime from './NavbarPrime';
@@ -185,7 +186,7 @@ import moreBooks16 from './more-books-16.jpg';
 import moreBooks17 from './more-books-17.jpg';
 import moreBooks18 from './more-books-18.jpg';
 
-export function FrontPage(){
+export function FrontPage({location}){
     const [carouselSlides] = useState([fireTVStick, amazonFresh, amazonMusic, alexaWeather]);
     const [seeMoreSlides] = useState([relatedItems1, relatedItems2, relatedItems3, relatedItems4, 
         relatedItems5, relatedItems6, relatedItems7, relatedItems8, relatedItems9, relatedItems10, 
@@ -321,7 +322,7 @@ export function FrontPage(){
 
     return(
         <div class="FrontPage">
-            <NavbarPrime />
+            <NavbarPrime productCount={location.state.productCount}/>
             <section id="front-page-carousel">
                 <i id="left-hero-carousel-arrow" name="left-hero-carousel-arrow" alt="left-hero-carousel-arrow"  onClick={prevSlide}></i>
                 <img id="current-carousel-image" name="current-carousel-image" alt={currentSlide} src={carouselSlides[currentSlide]}></img>

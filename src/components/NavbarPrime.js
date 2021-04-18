@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import './NavbarPrime.css';
 
-export function NavbarPrime({productCount=0}){
+export function NavbarPrime({location, productCount=0}){
+    
     const [search, setSearch] = useState(false);
     const handleSearch = () => {
        setSearch(true);
