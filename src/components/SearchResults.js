@@ -10,8 +10,7 @@ import searchResult3 from './search-results-3.jpg';
 import searchResult4 from './search-results-4.jpg';
 import searchResult5 from './search-results-5.jpg';
 
-export function SearchResults(){
-
+export function SearchResults({location, productCount=0}){
     let [checked, setChecked] = useState(false);
     let [toggleDropdown, setToggleDropdown] = useState("See All 3 Departments");
     let [toggleDropdown2, setToggleDropdown2] = useState("See more");
@@ -83,7 +82,7 @@ export function SearchResults(){
 
     return(
         <div class="SearchResults">
-            <NavbarPrime />
+            <NavbarPrime productCount={productCount}/>
             <section id="upper-result-bar">
                 <span id="results-breadcrumb-index">1-16 of 217 results for</span>
                 <span id="results-breadcrumb-search-term">"cracking the coding interview"</span>

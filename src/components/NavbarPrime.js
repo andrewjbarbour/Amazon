@@ -10,7 +10,11 @@ export function NavbarPrime({location, productCount=0}){
     }
 
     return(
-        search ? <Redirect to="/search"/> : 
+        search ? <Redirect 
+                    to={{
+                    pathname:"/search",
+                    state: {productCount: productCount}
+                    }}/> : 
         <header id="front-page-header">
                 <div id="nav-belt">
                     <Link 
