@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useLocation, Redirect} from 'react-router-dom';
 import './SearchResults.css';
 import NavbarPrime from './NavbarPrime';
 import Footer from './Footer';
@@ -11,6 +11,9 @@ import searchResult4 from './search-results-4.jpg';
 import searchResult5 from './search-results-5.jpg';
 
 export function SearchResults({location, productCount=0}){
+    if(location){
+        productCount = location.state.productCount;
+    }
     let [checked, setChecked] = useState(false);
     let [toggleDropdown, setToggleDropdown] = useState("See All 3 Departments");
     let [toggleDropdown2, setToggleDropdown2] = useState("See more");

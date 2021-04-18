@@ -7,7 +7,7 @@ import securedSsl from './secured-ssl.png';
 import checkoutProductImage from './checkout-product-image.jpg';
 import amazonGiftButton from './amazon-gift-button.png';
 
-export function PlaceOrderPrime({location, initialQuantity=1}){
+export function PlaceOrderPrime({location}){
     const getShippingDate = () => {
         let shippingDate = new Date();
         shippingDate.setDate(shippingDate.getDate()+1);
@@ -39,17 +39,17 @@ export function PlaceOrderPrime({location, initialQuantity=1}){
         return `${days[shippingDate.getDay()]}, ${months[shippingDate.getMonth()]} ${shippingDate.getDate()}`;
     }
 
-    const openTooltip = (event) => {
+    const openTooltip = () => {
         const tooltip = document.getElementById('expanded-free-returns-tooltip');
         tooltip.style.display = "inline-block";
       }
     
-    const closeTooltip = (event) => {
+    const closeTooltip = () => {
         const tooltip = document.getElementById('expanded-free-returns-tooltip');
         tooltip.style.display = "none";
       }
 
-    const handleScroll = event => {
+    const handleScroll = () => {
         const placeOrderButtonTop = document.getElementById('place-order-button-top');
         if(window.scrollY > 150){
             placeOrderButtonTop.style.position = "fixed";
