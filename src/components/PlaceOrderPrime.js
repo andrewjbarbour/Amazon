@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './PlaceOrderPrime.css';
 import amazonLockerPin from './locker-pin.png';
 import visaLogo from './visa.gif';
@@ -7,7 +7,7 @@ import securedSsl from './secured-ssl.png';
 import checkoutProductImage from './checkout-product-image.jpg';
 import amazonGiftButton from './amazon-gift-button.png';
 
-export function PlaceOrderPrime({initialQuantity=1}){
+export function PlaceOrderPrime({location, initialQuantity=1}){
     const getShippingDate = () => {
         let shippingDate = new Date();
         shippingDate.setDate(shippingDate.getDate()+1);
@@ -69,7 +69,7 @@ export function PlaceOrderPrime({initialQuantity=1}){
     }
 
     const [price, setPrice] = useState(24.99);
-    const [quantity, setQuantity] = useState(initialQuantity);
+    const [quantity, setQuantity] = useState(location.state.productCount);
 
     const getPrice = () => {
         return `\$${(quantity * price).toFixed(2)}`;

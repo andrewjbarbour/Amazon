@@ -112,7 +112,11 @@ export function NavbarPrime({productCount=0}){
                         <span id="front-page-returns-nav">Returns</span>
                         <span id="front-page-orders-nav">& Orders</span>
                     </div>
-                    <Link to="/place-order" class="react-router-link">
+                    <Link 
+                        to={{
+                        pathname:"/place-order",
+                        state: {productCount: productCount}}}
+                        class="react-router-link">
                     <div id="nav-cart">
                         <span id="nav-cart-count">{productCount}</span>
                         <object id="nav-cart-sprite" name="nav-cart-sprite" alt="nav-cart-sprite" src="trans.png">
