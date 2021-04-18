@@ -272,8 +272,8 @@ export function Product(){
                             <div id="buy-box-row-12">
                                 <Link to={{
                                     pathname:"/place-order",
-                                    state: {productCount: cartCount}}}>
-                                <input value="Buy Now" name="buy-now-button" id="buy-now-button" type="submit" />
+                                    state: {productCount: cartCount + newItems}}} >
+                                <input value="Buy Now" name="buy-now-button" id="buy-now-button" type="submit"/>
                                 </Link>
                             </div>
                             <div id="buy-box-row-13">
