@@ -261,7 +261,10 @@ export function SearchResults({location, productCount=0}){
                                 </div>
                             <div class="search-results-inner-wrapper">
                                 <div class="search-results-inner-col-left" id="search-results-inner-col-left-row-2">
-                                    <Link to="/product">
+                                    <Link to={{
+                                        pathname: "/product",
+                                        state: {productCount: productCount}
+                                        }}>
                                     <img class="search-result-img" id="search-result-img-3" src={searchResult3}></img>
                                     </Link>
                                 </div>

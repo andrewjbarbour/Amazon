@@ -51,16 +51,18 @@ export function PlaceOrderPrime({location}){
 
     const handleScroll = () => {
         const placeOrderButtonTop = document.getElementById('place-order-button-top');
-        if(window.scrollY > 150){
-            placeOrderButtonTop.style.position = "fixed";
-            placeOrderButtonTop.style.marginLeft = "68.5%";
-            placeOrderButtonTop.style.marginTop = "-3%";
+        if(placeOrderButtonTop){
+            if(window.scrollY > 150){
+                placeOrderButtonTop.style.position = "fixed";
+                placeOrderButtonTop.style.marginLeft = "68.5%";
+                placeOrderButtonTop.style.marginTop = "-3%";
+            }
+            else{
+                placeOrderButtonTop.style.position = "relative";
+                placeOrderButtonTop.style.marginLeft = "8%";
+                placeOrderButtonTop.style.marginTop = "15px";
+            }    
         }
-        else{
-            placeOrderButtonTop.style.position = "relative";
-            placeOrderButtonTop.style.marginLeft = "8%";
-            placeOrderButtonTop.style.marginTop = "15px";
-        }    
     }
 
     const selectOptions = useState([]);
