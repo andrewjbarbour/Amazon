@@ -66,7 +66,7 @@ export function PlaceOrderPrime({location}){
     }
 
     const selectOptions = useState([]);
-    for(let i = 1; i<10; i++){
+    for(let i = 1; i<=10; i++){
         selectOptions.push( <option value={i}>{i}</option>);
     }
 
@@ -213,7 +213,6 @@ export function PlaceOrderPrime({location}){
                             <select id="cart-item-quantity-selector" onChange={handleCartChange}>
                                 <option value="1" selected disabled hidden>Qty: 1</option>
                                 {selectOptions}
-                                <option value="10">10+</option>
                                 <option value="0">Delete</option>
                             </select>
                             <span id="place-order-sold-by">Sold by: Amazon.com Services LLC</span>
