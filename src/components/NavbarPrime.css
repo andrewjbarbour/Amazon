@@ -269,8 +269,9 @@
   
   #nav-cart-count {
     position: absolute;
-    margin-left: 17px;
+    margin-left: 14px;
     margin-top: 13px;
+    text-align: center;
     color: #f08844;
     font-weight: 800;
     font-size: 16px;

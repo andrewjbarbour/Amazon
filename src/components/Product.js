@@ -263,8 +263,7 @@ export function Product({location}){
                                 <option value="7">7</option>
                                 <option value="8">8</option>
                                 <option value="9">9</option>
-                                <option value="10">10+</option>
-                                <option value="0">Delete</option>
+                                <option value="10">10</option>                              
                             </select>
                             </div>
                             <div id="buy-box-row-11">
