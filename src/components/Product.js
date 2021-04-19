@@ -11,6 +11,7 @@ import securedSsl from './secured-ssl.png';
 import locationPin from './location-pin.png';
 
 export function Product({location}){
+    window.scrollTo(0, 0);
     let [cartCount, setCartCount] = useState(location.state.productCount);
     
     const [dropDownToggle, setDropDownToggle] = useState(0);

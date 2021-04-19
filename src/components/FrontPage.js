@@ -221,6 +221,8 @@ export function FrontPage({location}){
     const [currentVideoGamesSlide, setCurrentVideoGamesSlide] = useState([0]);
     const [currentMoreBooksSlide, setCurrentMoreBooksSlide] = useState([0]);
 
+    window.scrollTo(0, 0);
+    
     const prevSlide = () =>{
         if(currentSlide>0){
             setCurrentSlide(currentSlide-1);

@@ -8,6 +8,7 @@ import checkoutProductImage from './checkout-product-image.jpg';
 import amazonGiftButton from './amazon-gift-button.png';
 
 export function PlaceOrderPrime({location}){
+    window.scrollTo(0, 0);
     const getShippingDate = () => {
         let shippingDate = new Date();
         shippingDate.setDate(shippingDate.getDate()+1);
