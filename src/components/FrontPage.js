@@ -321,10 +321,17 @@ export function FrontPage({location}){
         }
     }
 
+    const[productCount, setProductCount] = useState(0);
+
+    useEffect(() => {
+        if(location.state!==undefined){
+            setProductCount(location.state.productCount);
+        }
+    }, [location])
 
     return(
         <div class="FrontPage">
-            <NavbarPrime productCount={location.state.productCount}/>
+            <NavbarPrime productCount={productCount}/>
             <section id="front-page-carousel">
                 <i id="left-hero-carousel-arrow" name="left-hero-carousel-arrow" alt="left-hero-carousel-arrow"  onClick={prevSlide}></i>
                 <img id="current-carousel-image" name="current-carousel-image" alt={currentSlide} src={carouselSlides[currentSlide]}></img>
