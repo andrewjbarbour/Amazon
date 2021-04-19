@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom'; 
+import { Link } from 'react-router-dom'; 
 import './Product.css';
 import NavbarPrime from './NavbarPrime';
 import Footer from './Footer';
@@ -10,8 +10,9 @@ import productSmall2 from './product-2-small-2.jpg';
 import securedSsl from './secured-ssl.png';
 import locationPin from './location-pin.png';
 
-export function Product(){
-    let [cartCount, setCartCount] = useState(0);
+export function Product({location}){
+    let [cartCount, setCartCount] = useState(location.state.productCount);
+    
     const [dropDownToggle, setDropDownToggle] = useState(0);
     let [toggleDropdown2, setToggleDropdown2] = useState("Read more");
 
