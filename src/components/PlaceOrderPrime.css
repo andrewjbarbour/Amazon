@@ -529,15 +529,14 @@ td{
 }
 
 .order-summary-table-right-cell{
-    position: absolute;
-    right: 13%;
+    float: right;
+    transform: translate(-5px);
 }
 
 .place-order-extra-small-divider{
     position: absolute;
     opacity: .25;
-    left: 82.8%;
-    margin-right: -45px;
+    margin-left: 182px;
     width: 61px;
     padding-bottom: 0px;
     margin-bottom: -2px;

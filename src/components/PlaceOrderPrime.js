@@ -286,7 +286,7 @@ export function PlaceOrderPrime({location}){
                                 <td>Total before tax:</td>
                                 <td class="order-summary-table-right-cell">{getPrice()}</td>
                             </tr>
-                            <tr>
+                            <tr id="order-summary-table-row4">
                                 <td>Estimated tax to be collected:</td>
                                 <td class="order-summary-table-right-cell">&#160;&#160;$0.00</td>
                             </tr>
