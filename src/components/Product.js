@@ -62,7 +62,7 @@ export function Product({location}){
         return `${days[shippingDate.getDay()]}, ${months[shippingDate.getMonth()]} ${shippingDate.getDate()}`;
     }
 
-    const [newItems, setnewItems] = useState(1);
+    const [newItems, setnewItems] = useState(0);
 
 
     const addCartItems = (event) => {
@@ -71,7 +71,7 @@ export function Product({location}){
 
 
     const addToCart = () => {
-        setCartCount(prevCartCount => prevCartCount + newItems);
+        setCartCount(prevCartCount => parseInt(prevCartCount) + newItems);
     }
 
     return(
@@ -273,7 +273,7 @@ export function Product({location}){
                             <div id="buy-box-row-12">
                                 <Link to={{
                                     pathname:"/place-order",
-                                    state: {productCount: cartCount + newItems}}} >
+                                    state: {productCount: parseInt(cartCount) + parseInt(newItems)}}} >
                                 <input value="Buy Now" name="buy-now-button" id="buy-now-button" type="submit"/>
                                 </Link>
                             </div>
