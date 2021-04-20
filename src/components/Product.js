@@ -134,7 +134,7 @@ export function Product({location}){
                     {getImageCount() > 1 ? <span id="small-img-wrapper-modal-link">See all {getImageCount()} images</span> : ""}
                       
                     </div>
-                    <hr id="small-img-wrapper-bottom-divider"></hr>
+                    {getImageCount()>1 ? <hr id="small-img-wrapper-bottom-divider"></hr> : ""}
                 </section>
                 <section class="top-product-UI-center-col">
                     <h1 id="product-title">{location.state.name}</h1>

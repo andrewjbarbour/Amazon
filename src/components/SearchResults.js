@@ -443,7 +443,35 @@ export function SearchResults({location, productCount=0}){
                                     </Link>
                                 </div>
                                 <div class="search-results-inner-col-right" id="search-results-inner-col-right-row-3">
-                                    <span class="search-results-inner-col-header">Elements of Programming Interviews in Python: The Insiders' Guide</span>
+                                    <Link to={{
+                                            pathname: "/product",
+                                            state: {
+                                                productCount: productCount,
+                                                name: "Elements of Programming Interviews in Python: The Insiders' Guide",
+                                                author: "Adnan Aziz",
+                                                bestseller: "Genetic Algorithms",
+                                                images: [pythonLarge, pythonSmall1, pythonSmall2],
+                                                ratings: 446,
+                                                releaseDate: "September 15, 2016",
+                                                cost1: 35.96,
+                                                cost2: 35.96,
+                                                usedCount: 14,
+                                                usedPrice: 19.97,
+                                                newCount: 13,
+                                                newPrice: 35.96,
+                                                listPrice: 39.95,
+                                                description: `This is the Python version of our book. See the website for links to the C++ and Java version. Have you ever...`,
+                                                subheaderText: "Wanted to work at an exciting futuristic company?",
+                                                subheaderText2: "Struggled with an interview problem that could have been solved in 15 minutes?",
+                                                subheaderText3: `If so, you need to read Elements of Programming Interviews (EPI).
+                                                EPI is your comprehensive guide to interviewing for software development roles.
+                                                The core of EPI is a collection of over 250 problems with detailed solutions. The problems are representative of interview questions asked at leading software companies. The problems are illustrated with 200 figures, 300 tested programs, and 150 additional variants.`,
+                                                subheaderText4: `The book begins with a summary of the nontechnical aspects of interviewing, such as strategies for a great interview, common mistakes, perspectives from the other side of the table, tips on negotiating the best offer, and a guide to the best ways to use EPI. We also provide a summary of data structures, algorithms, and problem solving patterns.
+                                                Coding problems are presented through a series of chapters on basic and advanced data structures, searching, sorting, algorithm design principles, and concurrency. Each chapter stars with a brief introduction, a case study, top tips, and a review of the most important library methods. This is followed by a broad and thought-provoking set of problems.`,
+                                                contents: [""]
+                                            }}} class="react-router-link">
+                                            <span class="search-results-inner-col-header">Elements of Programming Interviews in Python: The Insiders' Guide</span>
+                                        </Link>
                                     <span class="search-results-inner-col-id">by <span class="inner-col-id-link">Adnan Aziz</span> , <span class="inner-col-id-link">Tsung-Hsien Lee</span>, et. al<span class="inner-col-divider">|</span> Sept 15, 2016</span>
                                     <div class="star-wrapper">
                                         <i class="star-icon-4-5"></i>
