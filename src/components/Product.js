@@ -153,11 +153,11 @@ export function Product({location}){
                     <div class="product-version-wrapper">
                         <div id="kindle-edition-button" class="product-version-button">
                             <span id="kindle-edition-text" class="product-edition-text">Kindle</span>
-                            <span id="kindle-edition-price" class="product-edition-price">${location.state.cost1}</span>
+                            <span id="kindle-edition-price" class="product-edition-price">${location.state.cost1.toFixed(2)}</span>
                         </div>
                         <div id="paperback-edition-button" class="product-version-button">
                             <span id="paperback-edition-text" class="product-edition-text">Paperback</span>
-                            <span id="paperback-edition-price" class="product-edition-price">${location.state.cost2}</span>
+                            <span id="paperback-edition-price" class="product-edition-price">${location.state.cost2.toFixed(2)}</span>
                             <i id="prime-version-button-logo"></i>
                         </div>
                         
@@ -167,8 +167,8 @@ export function Product({location}){
                                 <a class="product-version-subcard-header">Read with Our <span id="free-app-bold">Free App</span></a>
                         </div>
                         <div class="product-version-subcard">
-                                <a class="product-version-subcard-header">{location.state.usedCount} Used <span class="from-text">from</span> ${location.state.usedPrice}</a>
-                                <a class="product-version-subcard-header">{location.state.newCount} New <span  class="from-text">from</span> ${location.state.newPrice}</a>
+                                <a class="product-version-subcard-header">{location.state.usedCount} Used <span class="from-text">from</span> ${location.state.usedPrice.toFixed(2)}</a>
+                                <a class="product-version-subcard-header">{location.state.newCount} New <span  class="from-text">from</span> ${location.state.newPrice.toFixed(2)}</a>
                         </div>
                     </div>
                     <div class="main-product-wrapper">
@@ -210,10 +210,10 @@ export function Product({location}){
                         <div id="buy-box-inner-content-wrapper">
                             <div id="buy-box-row-1">
                                 <span id="buy-box-buy-new">Buy new:</span>
-                                <span id="buy-new-price">${location.state.cost2}</span>
+                                <span id="buy-new-price">${location.state.cost2.toFixed(2)}</span>
                             </div>
                             <div id="buy-box-row-2">
-                                <span id="buy-box-list-price">List Price: <span id="buy-box-original-price">${location.state.listPrice}</span><a id="buy-box-price-details-link">Details</a></span>
+                                <span id="buy-box-list-price">List Price: <span id="buy-box-original-price">${location.state.listPrice.toFixed(2)}</span><a id="buy-box-price-details-link">Details</a></span>
                             </div>
                             <div id="buy-box-row-3">
                                 <span id="buy-box-savings">Save: ${savingsDollars()} ({savingsPercent()}%)</span>
