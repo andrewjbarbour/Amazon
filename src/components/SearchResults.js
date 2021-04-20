@@ -417,7 +417,7 @@ export function SearchResults({location, productCount=0}){
                                         state: {
                                             productCount: productCount,
                                             name: "Elements of Programming Interviews in Python: The Insiders' Guide",
-                                            author: "Adnan Aziz",
+                                            authors: ["Adnan Aziz", "Tsung-Hsien Lee", "Amit Prakash"],
                                             bestseller: "Genetic Algorithms",
                                             images: [pythonLarge, pythonSmall1, pythonSmall2],
                                             ratings: 446,

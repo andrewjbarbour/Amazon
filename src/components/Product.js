@@ -4,14 +4,6 @@ import './Product.css';
 import NavbarPrime from './NavbarPrime';
 import Footer from './Footer';
 import lookInside from './look-inside.png';
-import productMain from './product-2-main-image.jpg';
-import productSmall1 from './product-2-small-1.jpg';
-import productSmall2 from './product-2-small-2.jpg';
-import cracking from './cracking-the-coding-interview-large.jpg';
-import pythonLarge from './elements-of-programming-interviews-python-large.webp';
-import pythonSmall1 from './elements-of-programming-interviews-python-small-1.jpg';
-import pythonSmall2 from './elements-of-programming-interviews-python-small-1.jpg';
-import java from './programming-interviews-in-java-large.jpg';
 import securedSsl from './secured-ssl.png';
 import locationPin from './location-pin.png';
 
@@ -96,6 +88,18 @@ export function Product({location}){
         }
     }
 
+    const authors = useState([]);
+    if(location.state.authors!==undefined){
+        for(let i = 0; i < location.state.authors.length; i++){
+            if(i+1 !== location.state.authors.length){
+                authors.push(<span><a id="byline-link">{location.state.authors[i]}</a><span id="byline-description">(Author), </span></span>);
+            }
+            else{
+                authors.push(<span><a id="byline-link">{location.state.authors[i]}</a><span id="byline-description">(Author) </span></span>);
+            }
+        }
+    }
+
     const savingsPercent = () => {
         return (((location.state.listPrice-location.state.newPrice)/location.state.listPrice).toFixed(2)*100);
     }
@@ -139,7 +143,7 @@ export function Product({location}){
                 <section class="top-product-UI-center-col">
                     <h1 id="product-title">{location.state.name}</h1>
                     <h2 id="product-subtitle">Paperback – {location.state.releaseDate}</h2>
-                    <span id="byline-info">by <a id="byline-link">{location.state.author}</a><span id="byline-description">(Author)</span></span>
+                    {location.state.author ? <span id="byline-info">by <a id="byline-link">{location.state.author}</a><span id="byline-description">(Author)</span></span> : <span id="byline-info"> {authors} </span>}
                     <div class="star-wrapper">
                         <i class="star-icon-4-5"></i>
                         <span class="review-count">{location.state.ratings} ratings</span>
