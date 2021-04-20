@@ -74,6 +74,12 @@ export function Product({location}){
         setCartCount(prevCartCount => parseInt(prevCartCount) + newItems);
     }
 
+    const contents = useState([]);
+    if(location.state.contents!==undefined){
+        for(let i = 0; i < location.state.contents.length; i++){
+            contents.push(<li>{location.state.contents[i]}</li>);
+        }
+    }
     return(
         <div class="Product">
             <NavbarPrime productCount = {cartCount}/>
@@ -158,22 +164,7 @@ export function Product({location}){
                             </div>
                             <ul id="read-more-collapsible-list" class="expanded-product-description-dropdown">
                                 <li id="read-more-collapsible-list-header">Table Of Contents</li>
-                                <li>Chapter 1: Scale From Zero To Millions Of Users</li>
-                                <li>Chapter 2: Back-of-the-envelope Estimation</li>
-                                <li>Chapter 3: A Framework For System Design Interviews</li>
-                                <li>Chapter 4: Design A Rate Limiter</li>
-                                <li>Chapter 5: Design Consistent Hashing</li>
-                                <li>Chapter 6: Design A Key-value Store</li>
-                                <li>Chapter 7: Design A Unique Id Generator In Distributed Systems</li>
-                                <li>Chapter 8: Design A Url Shortener</li>
-                                <li>Chapter 9: Design A Web Crawler</li>
-                                <li>Chapter 10: Design A Notification System</li>
-                                <li>Chapter 11: Design A News Feed System</li>
-                                <li>Chapter 12: Design A Chat System</li>
-                                <li>Chapter 13: Design A Search Autocomplete System</li>
-                                <li>Chapter 14: Design Youtube</li>
-                                <li>Chapter 15: Design Google Drive</li>
-                                <li>Chapter 16: The Learning Continues</li>
+                                {contents}
                             </ul>
                             <label for="read-more-collapsible" class="lbl-toggle" id="read-more-collapsible-label" onClick={toggleDropdownContent}>{toggleDropdown2}</label>
                             <div class="read-more-collapsible-content">
