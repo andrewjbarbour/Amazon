@@ -7,6 +7,11 @@ import lookInside from './look-inside.png';
 import productMain from './product-2-main-image.jpg';
 import productSmall1 from './product-2-small-1.jpg';
 import productSmall2 from './product-2-small-2.jpg';
+import cracking from './cracking-the-coding-interview-large.jpg';
+import pythonLarge from './elements-of-programming-interviews-python-large.webp';
+import pythonSmall1 from './elements-of-programming-interviews-python-small-1.jpg';
+import pythonSmall2 from './elements-of-programming-interviews-python-small-1.jpg';
+import java from './programming-interviews-in-java-large.jpg';
 import securedSsl from './secured-ssl.png';
 import locationPin from './location-pin.png';
 
@@ -122,7 +127,7 @@ export function Product({location}){
                     </div>
                     <div class="bestseller-badge-wrapper">
                         <i class="bestseller-badge-icon">#1 Best Seller</i>
-                        <a class="bestseller-badge-link">in Assembly Language Programming</a>
+                        <a class="bestseller-badge-link">in {location.state.bestseller}</a>
                     </div>
                     <hr class="top-product-UI-bottom-divider"></hr>
                     <span id="top-product-show-editions-dropdown">See all formats and editions</span>
