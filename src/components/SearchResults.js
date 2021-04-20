@@ -15,7 +15,7 @@ import productSmall2 from './product-2-small-2.jpg';
 import cracking from './cracking-the-coding-interview-large.jpg';
 import pythonLarge from './elements-of-programming-interviews-python-large.webp';
 import pythonSmall1 from './elements-of-programming-interviews-python-small-1.jpg';
-import pythonSmall2 from './elements-of-programming-interviews-python-small-1.jpg';
+import pythonSmall2 from './elements-of-programming-interviews-python-small-2.jpg';
 import java from './programming-interviews-in-java-large.jpg';
 
 export function SearchResults({location, productCount=0}){
@@ -237,37 +237,64 @@ export function SearchResults({location, productCount=0}){
                             </div>
                             <div class="search-results-inner-wrapper">
                                 <div class="search-results-inner-col-left" id="search-results-inner-col-left-row-1">
-                                <Link to={{
-                                    pathname: "/product",
-                                    state: {
-                                        productCount: productCount,
-                                        name: "Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition",
-                                        author: "Gayle Laakmann McDowell",
-                                        bestseller: "Job Interviewing",
-                                        images: [cracking],
-                                        ratings: 4777,
-                                        releaseDate: "July 15, 2015",
-                                        cost1: 24.00,
-                                        cost2: 24.00,
-                                        usedCount: 37,
-                                        usedPrice: 20.82,
-                                        newCount: 8,
-                                        newPrice: 24.00,
-                                        listPrice: 39.95,
-                                        description: `I am not a recruiter. I am a software engineer. And as such, I know what it's like to be asked to whip up brilliant algorithms on the spot and then write flawless code on a whiteboard. I've been through this as a candidate and as an interviewer.`,
-                                        subheaderText: "Cracking the Coding Interview, 6th Edition is here to help you through this process, teaching you what you need to know and enabling you to perform at your very best. I've coached and interviewed hundreds of software engineers. The result is this book.",
-                                        subheaderText2: "",
-                                        subheaderText3: "Learn how to uncover the hints and hidden details in a question, discover how to break down a problem into manageable chunks, develop techniques to unstick yourself when stuck, learn (or re-learn) core computer science concepts, and practice on 189 interview questions and solutions.",
-                                        subheaderText4: "These interview questions are real; they are not pulled out of computer science textbooks. They reflect what's truly being asked at the top companies, so that you can be as prepared as possible.",
-                                        contents: ["189 programming interview questions, ranging from the basics to the trickiest algorithm problems.", "A walk-through of how to derive each solution, so that you can learn how to get there yourself.", "Hints on how to solve each of the 189 questions, just like what you would get in a real interview.",
-                                        "Five proven strategies to tackle algorithm questions, so that you can solve questions you haven't seen.", "Extensive coverage of essential topics, such as big O time, data structures, and core algorithms.",
-                                        "A behind the scenes look at how top companies like Google and Facebook hire developers.", "Techniques to prepare for and ace the soft side of the interview: behavioral questions.", "For interviewers and companies: details on what makes a good interview question and hiring process."]
-                                    }}}>
-                                    <img class="search-result-img" id="search-result-img-2" src={searchResult2}></img>
+                                    <Link to={{
+                                        pathname: "/product",
+                                        state: {
+                                            productCount: productCount,
+                                            name: "Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition",
+                                            author: "Gayle Laakmann McDowell",
+                                            bestseller: "Job Interviewing",
+                                            images: [cracking],
+                                            ratings: 4777,
+                                            releaseDate: "July 15, 2015",
+                                            cost1: 24.00,
+                                            cost2: 24.00,
+                                            usedCount: 37,
+                                            usedPrice: 20.82,
+                                            newCount: 8,
+                                            newPrice: 24.00,
+                                            listPrice: 39.95,
+                                            description: `I am not a recruiter. I am a software engineer. And as such, I know what it's like to be asked to whip up brilliant algorithms on the spot and then write flawless code on a whiteboard. I've been through this as a candidate and as an interviewer.`,
+                                            subheaderText: "Cracking the Coding Interview, 6th Edition is here to help you through this process, teaching you what you need to know and enabling you to perform at your very best. I've coached and interviewed hundreds of software engineers. The result is this book.",
+                                            subheaderText2: "",
+                                            subheaderText3: "Learn how to uncover the hints and hidden details in a question, discover how to break down a problem into manageable chunks, develop techniques to unstick yourself when stuck, learn (or re-learn) core computer science concepts, and practice on 189 interview questions and solutions.",
+                                            subheaderText4: "These interview questions are real; they are not pulled out of computer science textbooks. They reflect what's truly being asked at the top companies, so that you can be as prepared as possible.",
+                                            contents: ["189 programming interview questions, ranging from the basics to the trickiest algorithm problems.", "A walk-through of how to derive each solution, so that you can learn how to get there yourself.", "Hints on how to solve each of the 189 questions, just like what you would get in a real interview.",
+                                            "Five proven strategies to tackle algorithm questions, so that you can solve questions you haven't seen.", "Extensive coverage of essential topics, such as big O time, data structures, and core algorithms.",
+                                            "A behind the scenes look at how top companies like Google and Facebook hire developers.", "Techniques to prepare for and ace the soft side of the interview: behavioral questions.", "For interviewers and companies: details on what makes a good interview question and hiring process."]
+                                        }}}>
+                                        <img class="search-result-img" id="search-result-img-2" src={searchResult2}></img>
                                     </Link>
                                 </div>
                                 <div class="search-results-inner-col-right" id="search-results-inner-col-right-row-1">
-                                    <span class="search-results-inner-col-header">Cracking the Coding Interview: 189 Programming Questions and Solutions</span>
+                                    <Link to={{
+                                            pathname: "/product",
+                                            state: {
+                                                productCount: productCount,
+                                                name: "Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition",
+                                                author: "Gayle Laakmann McDowell",
+                                                bestseller: "Job Interviewing",
+                                                images: [cracking],
+                                                ratings: 4777,
+                                                releaseDate: "July 15, 2015",
+                                                cost1: 24.00,
+                                                cost2: 24.00,
+                                                usedCount: 37,
+                                                usedPrice: 20.82,
+                                                newCount: 8,
+                                                newPrice: 24.00,
+                                                listPrice: 39.95,
+                                                description: `I am not a recruiter. I am a software engineer. And as such, I know what it's like to be asked to whip up brilliant algorithms on the spot and then write flawless code on a whiteboard. I've been through this as a candidate and as an interviewer.`,
+                                                subheaderText: "Cracking the Coding Interview, 6th Edition is here to help you through this process, teaching you what you need to know and enabling you to perform at your very best. I've coached and interviewed hundreds of software engineers. The result is this book.",
+                                                subheaderText2: "",
+                                                subheaderText3: "Learn how to uncover the hints and hidden details in a question, discover how to break down a problem into manageable chunks, develop techniques to unstick yourself when stuck, learn (or re-learn) core computer science concepts, and practice on 189 interview questions and solutions.",
+                                                subheaderText4: "These interview questions are real; they are not pulled out of computer science textbooks. They reflect what's truly being asked at the top companies, so that you can be as prepared as possible.",
+                                                contents: ["189 programming interview questions, ranging from the basics to the trickiest algorithm problems.", "A walk-through of how to derive each solution, so that you can learn how to get there yourself.", "Hints on how to solve each of the 189 questions, just like what you would get in a real interview.",
+                                                "Five proven strategies to tackle algorithm questions, so that you can solve questions you haven't seen.", "Extensive coverage of essential topics, such as big O time, data structures, and core algorithms.",
+                                                "A behind the scenes look at how top companies like Google and Facebook hire developers.", "Techniques to prepare for and ace the soft side of the interview: behavioral questions.", "For interviewers and companies: details on what makes a good interview question and hiring process."]
+                                            }}} class="react-router-link">
+                                        <span class="search-results-inner-col-header">Cracking the Coding Interview: 189 Programming Questions and Solutions</span>
+                                    </Link>
                                     <span class="search-results-inner-col-id">by <span class="inner-col-id-link">Gayle Laakmann McDowell</span> <span class="inner-col-divider">|</span> Jul 1, 2015</span>
                                     <div class="star-wrapper">
                                         <i class="star-icon-4-5"></i>
@@ -317,6 +344,7 @@ export function SearchResults({location, productCount=0}){
                                         interview by many. This book provides a step-by-step framework on how to tackle a system design
                                         question. It includes many real-world examples to illustrate the systematic approach with detailed
                                         steps that you can follow.`,
+                                        optionalDescription: "What's inside?",
                                         subheaderText: "- An insider’s take on what interviewers really look for and why.",
                                         subheaderText2: "- A 4-step framework for solving any system design interview question.",
                                         subheaderText3: "- 16 real system design interview questions with detailed solutions.",
@@ -352,6 +380,7 @@ export function SearchResults({location, productCount=0}){
                                         interview by many. This book provides a step-by-step framework on how to tackle a system design
                                         question. It includes many real-world examples to illustrate the systematic approach with detailed
                                         steps that you can follow.`,
+                                        optionalDescription: "What's inside?",
                                         subheaderText: "- An insider’s take on what interviewers really look for and why.",
                                         subheaderText2: "- A 4-step framework for solving any system design interview question.",
                                         subheaderText3: "- 16 real system design interview questions with detailed solutions.",
@@ -383,7 +412,35 @@ export function SearchResults({location, productCount=0}){
                                 </div>
                             <div class="search-results-inner-wrapper">
                                 <div class="search-results-inner-col-left" id="search-results-inner-col-left-row-3">
-                                    <img class="search-result-img" id="search-result-img-3" src={searchResult4}></img>
+                                <Link to={{
+                                        pathname: "/product",
+                                        state: {
+                                            productCount: productCount,
+                                            name: "Elements of Programming Interviews in Python: The Insiders' Guide",
+                                            author: "Adnan Aziz",
+                                            bestseller: "Genetic Algorithms",
+                                            images: [pythonLarge, pythonSmall1, pythonSmall2],
+                                            ratings: 446,
+                                            releaseDate: "September 15, 2016",
+                                            cost1: 35.96,
+                                            cost2: 35.96,
+                                            usedCount: 14,
+                                            usedPrice: 19.97,
+                                            newCount: 13,
+                                            newPrice: 35.96,
+                                            listPrice: 39.95,
+                                            description: `This is the Python version of our book. See the website for links to the C++ and Java version. Have you ever...`,
+                                            subheaderText: "Wanted to work at an exciting futuristic company?",
+                                            subheaderText2: "Struggled with an interview problem that could have been solved in 15 minutes?",
+                                            subheaderText3: `If so, you need to read Elements of Programming Interviews (EPI).
+                                            EPI is your comprehensive guide to interviewing for software development roles.
+                                            The core of EPI is a collection of over 250 problems with detailed solutions. The problems are representative of interview questions asked at leading software companies. The problems are illustrated with 200 figures, 300 tested programs, and 150 additional variants.`,
+                                            subheaderText4: `The book begins with a summary of the nontechnical aspects of interviewing, such as strategies for a great interview, common mistakes, perspectives from the other side of the table, tips on negotiating the best offer, and a guide to the best ways to use EPI. We also provide a summary of data structures, algorithms, and problem solving patterns.
+                                            Coding problems are presented through a series of chapters on basic and advanced data structures, searching, sorting, algorithm design principles, and concurrency. Each chapter stars with a brief introduction, a case study, top tips, and a review of the most important library methods. This is followed by a broad and thought-provoking set of problems.`,
+                                            contents: [""]
+                                        }}}>
+                                        <img class="search-result-img" id="search-result-img-3" src={searchResult4}></img>
+                                    </Link>
                                 </div>
                                 <div class="search-results-inner-col-right" id="search-results-inner-col-right-row-3">
                                     <span class="search-results-inner-col-header">Elements of Programming Interviews in Python: The Insiders' Guide</span>

@@ -175,7 +175,7 @@ export function Product({location}){
                         <div class="main-product-description">
                         {location.state.description}
 
-                        <span class="main-product-description-subheader">What’s inside?</span>
+                        {location.state.optionalDescription ? <span class="main-product-description-subheader">{location.state.optionalDescription}</span> : ""}
                         <span class="main-product-description-subheader-text">{location.state.subheaderText}</span>
                         
                         <div class="read-more-wrap-collapsible">
