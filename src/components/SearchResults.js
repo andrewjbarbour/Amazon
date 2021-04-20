@@ -492,8 +492,36 @@ export function SearchResults({location, productCount=0}){
                         <div class="search-results-row" id="search-result-row-4">
                            
                             <div class="search-results-inner-wrapper">
-                                <div class="search-results-inner-col-left" id="search-results-inner-col-left-row-4">
-                                    <img class="search-result-img" id="search-result-img-4" src={searchResult5}></img>
+                            <div class="search-results-inner-col-left" id="search-results-inner-col-left-row-4">
+                            <Link to={{
+                                        pathname: "/product",
+                                        state: {
+                                            productCount: productCount,
+                                            name: "Elements of Programming Interviews in Java: The Insiders' Guide",
+                                            authors: ["Adnan Aziz", "Tsung-Hsien Lee", "Amit Prakash"],
+                                            bestseller: "Genetic Algorithms",
+                                            images: [java],
+                                            ratings: 342,
+                                            releaseDate: "October 6, 2015",
+                                            cost1: 37.95,
+                                            cost2: 37.95,
+                                            usedCount: 17,
+                                            usedPrice: 24.25,
+                                            newCount: 7,
+                                            newPrice: 37.95,
+                                            listPrice: 39.95,
+                                            description: `This is the Java version of our book. See our website for links to the C++ version. Have you ever...`,
+                                            subheaderText: "Wanted to work at an exciting futuristic company?",
+                                            subheaderText2: "Struggled with an interview problem that could have been solved in 15 minutes?",
+                                            subheaderText3: `If so, you need to read Elements of Programming Interviews (EPI).
+                                            EPI is your comprehensive guide to interviewing for software development roles.
+                                            The core of EPI is a collection of over 250 problems with detailed solutions. The problems are representative of interview questions asked at leading software companies. The problems are illustrated with 200 figures, 300 tested programs, and 150 additional variants.`,
+                                            subheaderText4: `The book begins with a summary of the nontechnical aspects of interviewing, such as strategies for a great interview, common mistakes, perspectives from the other side of the table, tips on negotiating the best offer, and a guide to the best ways to use EPI. We also provide a summary of data structures, algorithms, and problem solving patterns.
+                                            Coding problems are presented through a series of chapters on basic and advanced data structures, searching, sorting, algorithm design principles, and concurrency. Each chapter stars with a brief introduction, a case study, top tips, and a review of the most important library methods. This is followed by a broad and thought-provoking set of problems.`,
+                                            contents: [""]
+                                        }}}>
+                                        <img class="search-result-img" id="search-result-img-5" src={searchResult5}></img>
+                                    </Link>
                                 </div>
                                 <div class="search-results-inner-col-right" id="search-results-inner-col-right-row-4">
                                     <span class="search-results-inner-col-header">Elements of Programming Interviews in Java: The Insiders' Guide</span>

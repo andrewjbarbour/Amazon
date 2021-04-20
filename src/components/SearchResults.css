@@ -552,6 +552,10 @@
   cursor: pointer;
 }
 
+#search-result-img-5{
+  margin-top: 20px;
+}
+
 .search-results-inner-col-right {
   margin-left: 20px;
   height: 266px;
