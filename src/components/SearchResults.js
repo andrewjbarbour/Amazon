@@ -263,7 +263,31 @@ export function SearchResults({location, productCount=0}){
                                 <div class="search-results-inner-col-left" id="search-results-inner-col-left-row-2">
                                 <Link to={{
                                     pathname: "/product",
-                                    state: {productCount: productCount
+                                    state: {
+                                        productCount: productCount,
+                                        name: "System Design Interview – An insider's guide, Second Edition",
+                                        author: "Alex Xu",
+                                        ratings: 500,
+                                        releaseDate: "June 12, 2020",
+                                        cost1: 24.99,
+                                        cost2: 24.99,
+                                        usedCount: 2,
+                                        usedPrice: 32.98,
+                                        newCount: 3,
+                                        newPrice: 24.99,
+                                        listPrice: 39.99,
+                                        description: `The system design interview is considered to be the most complex and most difficult technical job 
+                                        interview by many. This book provides a step-by-step framework on how to tackle a system design
+                                        question. It includes many real-world examples to illustrate the systematic approach with detailed
+                                        steps that you can follow.`,
+                                        subheaderText: "- An insider’s take on what interviewers really look for and why.",
+                                        subheaderText2: "- A 4-step framework for solving any system design interview question.",
+                                        subheaderText3: "- 16 real system design interview questions with detailed solutions.",
+                                        subheaderText4: "- 188 diagrams to visually explain how different systems work.",
+                                        contents: ["Chapter 1: Scale From Zero To Millions Of Users", "Chapter 2: Back-of-the-envelope Estimation", "Chapter 3: A Framework For System Design Interviews",
+                                        "Chapter 4: Design A Rate Limiter", "Chapter 5: Design Consistent Hashing", "Chapter 6: Design A Key-value Store", "Chapter 7: Design A Unique Id Generator In Distributed Systems",
+                                        "Chapter 8: Design A Url Shortener", "Chapter 9: Design A Web Crawler", "Chapter 10: Design A Notification System", "Chapter 11: Design A News Feed System", "Chapter 12: Design A Chat System",
+                                        "Chapter 13: Design A Search Autocomplete System", "Chapter 14: Design Youtube", "Chapter 15: Design Google Drive", "Chapter 16: The Learning Continues"]
                                     }}}>
                                     <img class="search-result-img" id="search-result-img-3" src={searchResult3}></img>
                                     </Link>
@@ -271,7 +295,23 @@ export function SearchResults({location, productCount=0}){
                                 <div class="search-results-inner-col-right" id="search-results-inner-col-right-row-2">
                                 <Link to={{
                                     pathname: "/product",
-                                    state: {productCount: productCount
+                                    state: {
+                                        productCount: productCount,
+                                        name: "System Design Interview – An insider's guide, Second Edition",
+                                        author: "Alex Xu",
+                                        ratings: 500,
+                                        releaseDate: "June 12, 2020",
+                                        cost1: 24.99,
+                                        cost2: 24.99,
+                                        usedCount: 2,
+                                        usedPrice: 32.98,
+                                        newCount: 3,
+                                        newPrice: 24.99,
+                                        description: `      
+                                        The system design interview is considered to be the most complex and most difficult technical job 
+                                        interview by many. This book provides a step-by-step framework on how to tackle a system design
+                                        question. It includes many real-world examples to illustrate the systematic approach with detailed
+                                        steps that you can follow.`
                                     }}}class="react-router-link">
                                     <span class="search-results-inner-col-header">System Design Interview - An Insider's Guide</span>
                                     </Link>

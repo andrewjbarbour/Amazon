@@ -12,8 +12,7 @@ import locationPin from './location-pin.png';
 
 export function Product({location}){
     window.scrollTo(0, 0);
-    let [cartCount, setCartCount] = useState(location.state.productCount);
-    
+    let [cartCount, setCartCount] = useState(location.state.productCount);    
     const [dropDownToggle, setDropDownToggle] = useState(0);
     let [toggleDropdown2, setToggleDropdown2] = useState("Read more");
 
@@ -108,12 +107,12 @@ export function Product({location}){
                     <hr id="small-img-wrapper-bottom-divider"></hr>
                 </section>
                 <section class="top-product-UI-center-col">
-                    <h1 id="product-title">System Design Interview – An insider's guide, Second Edition</h1>
-                    <h2 id="product-subtitle">Paperback – June 12, 2020</h2>
-                    <span id="byline-info">by <a id="byline-link">Alex Xu</a><span id="byline-description">(Author)</span></span>
+                    <h1 id="product-title">{location.state.name}</h1>
+                    <h2 id="product-subtitle">Paperback – {location.state.releaseDate}</h2>
+                    <span id="byline-info">by <a id="byline-link">{location.state.author}</a><span id="byline-description">(Author)</span></span>
                     <div class="star-wrapper">
                         <i class="star-icon-4-5"></i>
-                        <span class="review-count">500 ratings</span>
+                        <span class="review-count">{location.state.ratings} ratings</span>
                     </div>
                     <div class="bestseller-badge-wrapper">
                         <i class="bestseller-badge-icon">#1 Best Seller</i>
@@ -124,11 +123,11 @@ export function Product({location}){
                     <div class="product-version-wrapper">
                         <div id="kindle-edition-button" class="product-version-button">
                             <span id="kindle-edition-text" class="product-edition-text">Kindle</span>
-                            <span id="kindle-edition-price" class="product-edition-price">$24.99</span>
+                            <span id="kindle-edition-price" class="product-edition-price">${location.state.cost1}</span>
                         </div>
                         <div id="paperback-edition-button" class="product-version-button">
                             <span id="paperback-edition-text" class="product-edition-text">Paperback</span>
-                            <span id="paperback-edition-price" class="product-edition-price">$24.99</span>
+                            <span id="paperback-edition-price" class="product-edition-price">${location.state.cost2}</span>
                             <i id="prime-version-button-logo"></i>
                         </div>
                         
@@ -138,27 +137,24 @@ export function Product({location}){
                                 <a class="product-version-subcard-header">Read with Our <span id="free-app-bold">Free App</span></a>
                         </div>
                         <div class="product-version-subcard">
-                                <a class="product-version-subcard-header">2 Used <span class="from-text">from</span> $32.98</a>
-                                <a class="product-version-subcard-header">3 New <span  class="from-text">from</span> $24.99</a>
+                                <a class="product-version-subcard-header">{location.state.usedCount} Used <span class="from-text">from</span> ${location.state.usedPrice}</a>
+                                <a class="product-version-subcard-header">{location.state.newCount} New <span  class="from-text">from</span> ${location.state.newPrice}</a>
                         </div>
                     </div>
                     <div class="main-product-wrapper">
                         <div class="main-product-description">
-                        The system design interview is considered to be the most complex and most difficult technical job 
-                        interview by many. This book provides a step-by-step framework on how to tackle a system design
-                        question. It includes many real-world examples to illustrate the systematic approach with detailed
-                        steps that you can follow.
+                        {location.state.description}
 
                         <span class="main-product-description-subheader">What’s inside?</span>
-                        <span class="main-product-description-subheader-text">- An insider’s take on what interviewers really look for and why.</span>
+                        <span class="main-product-description-subheader-text">{location.state.subheaderText}</span>
                         
                         <div class="read-more-wrap-collapsible">
                             <i id="dropdown-selector-icon"></i>   
                             <input id="read-more-collapsible" class="toggle" type="checkbox" onClick={rotateDropdownSelector} />
                             <div id="read-more-collapsible-top-content" class="expanded-product-description-dropdown">
-                                - A 4-step framework for solving any system design interview question.
-                                <br/>- 16 real system design interview questions with detailed solutions.
-                                <br/>- 188 diagrams to visually explain how different systems work.
+                                {location.state.subheaderText2}
+                                <br/>{location.state.subheaderText3}
+                                <br/>{location.state.subheaderText4}
                             </div>
                             <ul id="read-more-collapsible-list" class="expanded-product-description-dropdown">
                                 <li id="read-more-collapsible-list-header">Table Of Contents</li>
@@ -199,10 +195,10 @@ export function Product({location}){
                         <div id="buy-box-inner-content-wrapper">
                             <div id="buy-box-row-1">
                                 <span id="buy-box-buy-new">Buy new:</span>
-                                <span id="buy-new-price">$24.99</span>
+                                <span id="buy-new-price">${location.state.cost2}</span>
                             </div>
                             <div id="buy-box-row-2">
-                                <span id="buy-box-list-price">List Price: <span id="buy-box-original-price">$39.99</span><a id="buy-box-price-details-link">Details</a></span>
+                                <span id="buy-box-list-price">List Price: <span id="buy-box-original-price">${location.state.listPrice}</span><a id="buy-box-price-details-link">Details</a></span>
                             </div>
                             <div id="buy-box-row-3">
                                 <span id="buy-box-savings">Save: $15.00 (38%)</span>
