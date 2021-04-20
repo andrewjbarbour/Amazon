@@ -9,6 +9,14 @@ import searchResult2 from './search-results-2.jpg';
 import searchResult3 from './search-results-3.jpg';
 import searchResult4 from './search-results-4.jpg';
 import searchResult5 from './search-results-5.jpg';
+import productMain from './product-2-main-image.jpg';
+import productSmall1 from './product-2-small-1.jpg';
+import productSmall2 from './product-2-small-2.jpg';
+import cracking from './cracking-the-coding-interview-large.jpg';
+import pythonLarge from './elements-of-programming-interviews-python-large.webp';
+import pythonSmall1 from './elements-of-programming-interviews-python-small-1.jpg';
+import pythonSmall2 from './elements-of-programming-interviews-python-small-1.jpg';
+import java from './programming-interviews-in-java-large.jpg';
 
 export function SearchResults({location, productCount=0}){
     if(location){
@@ -268,6 +276,7 @@ export function SearchResults({location, productCount=0}){
                                         name: "System Design Interview – An insider's guide, Second Edition",
                                         author: "Alex Xu",
                                         bestseller: "Assembly Language Programming",
+                                        images: [productMain, productSmall1, productSmall2],
                                         ratings: 500,
                                         releaseDate: "June 12, 2020",
                                         cost1: 24.99,
@@ -301,6 +310,7 @@ export function SearchResults({location, productCount=0}){
                                         name: "System Design Interview – An insider's guide, Second Edition",
                                         author: "Alex Xu",
                                         bestseller: "Assembly Language Programming",
+                                        images: [productMain, productSmall1, productSmall2],
                                         ratings: 500,
                                         releaseDate: "June 12, 2020",
                                         cost1: 24.99,
@@ -309,6 +319,7 @@ export function SearchResults({location, productCount=0}){
                                         usedPrice: 32.98,
                                         newCount: 3,
                                         newPrice: 24.99,
+                                        listPrice: 39.99,
                                         description: `      
                                         The system design interview is considered to be the most complex and most difficult technical job 
                                         interview by many. This book provides a step-by-step framework on how to tackle a system design

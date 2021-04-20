@@ -85,6 +85,25 @@ export function Product({location}){
             contents.push(<li>{location.state.contents[i]}</li>);
         }
     }
+
+    const getImageCount = () => {
+        let imageCount = 0;
+        if(location.state.images!==undefined){
+          while(imageCount < location.state.images.length){
+              imageCount++
+          }
+        return imageCount;
+        }
+    }
+
+    const savingsPercent = () => {
+        return (((location.state.listPrice-location.state.newPrice)/location.state.listPrice).toFixed(2)*100);
+    }
+
+    const savingsDollars = () => {
+        return (location.state.listPrice - location.state.newPrice).toFixed(2);
+    }
+
     return(
         <div class="Product">
             <NavbarPrime productCount = {cartCount}/>
@@ -108,11 +127,11 @@ export function Product({location}){
             <section id="top-product-UI">
                 <section class="top-product-UI-left-col" id="main-product-image-container">
                     <img name="look-inside-img" id="look-inside-img" alt="look-inside-img" src={lookInside}></img>
-                    <img name="product-2-main-image" id="product-2-main-image" alt="product-2-main-image" src={productMain}></img>
+                    {location.state.images[0] ? <img name="product-2-main-image" id="product-2-main-image" alt="product-2-main-image" src={location.state.images[0]}></img> : ""}
                     <div id="product-small-img-wrapper">
-                        <img name="product-small-img-1" id="product-small-img-1" alt="product-small-img-1" src={productSmall1}></img>
-                        <img name="product-small-img-2" id="product-small-img-2" alt="product-small-img-2" src={productSmall2}></img>
-                        <span id="small-img-wrapper-modal-link">See all 2 images</span>
+                    {location.state.images[1] ? <img name="product-small-img-1" id="product-small-img-1" alt="product-small-img-1" src={location.state.images[1]}></img>: ""}
+                    {location.state.images[2] ? <img name="product-small-img-2" id="product-small-img-2" alt="product-small-img-2" src={location.state.images[2]}></img>: ""}
+                    {getImageCount() > 1 ? <span id="small-img-wrapper-modal-link">See all {getImageCount()} images</span> : ""}
                       
                     </div>
                     <hr id="small-img-wrapper-bottom-divider"></hr>
@@ -197,7 +216,7 @@ export function Product({location}){
                                 <span id="buy-box-list-price">List Price: <span id="buy-box-original-price">${location.state.listPrice}</span><a id="buy-box-price-details-link">Details</a></span>
                             </div>
                             <div id="buy-box-row-3">
-                                <span id="buy-box-savings">Save: $15.00 (38%)</span>
+                                <span id="buy-box-savings">Save: ${savingsDollars()} ({savingsPercent()}%)</span>
                             </div>
                             <div id="buy-box-row-4">
                                 <i id="buy-box-prime-icon"></i>
