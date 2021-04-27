@@ -689,8 +689,9 @@ td{
 }
 
 #checkout-item-image{
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    /*height: 90px;*/
+    aspect-ratio: width / height;
 }
 
 #cart-items-box-inner-col-2{

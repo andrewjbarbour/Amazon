@@ -131,7 +131,7 @@ export function Product({location}){
             <section id="top-product-UI">
                 <section class="top-product-UI-left-col" id="main-product-image-container">
                     <img name="look-inside-img" id="look-inside-img" alt="look-inside-img" src={lookInside}></img>
-                    {location.state.images[0] ? <img name="product-2-main-image" id="product-2-main-image" alt="product-2-main-image" src={location.state.images[0]}></img> : ""}
+                    {location.state.images[0] ? <img name="product-2-main-image" id="product-2-main-image" alt="product-2-main-image" src={location.state.images[0]}></img>: ""}
                     <div id="product-small-img-wrapper">
                     {location.state.images[1] ? <img name="product-small-img-1" id="product-small-img-1" alt="product-small-img-1" src={location.state.images[1]}></img>: ""}
                     {location.state.images[2] ? <img name="product-small-img-2" id="product-small-img-2" alt="product-small-img-2" src={location.state.images[2]}></img>: ""}
@@ -288,7 +288,14 @@ export function Product({location}){
                             <div id="buy-box-row-12">
                                 <Link to={{
                                     pathname:"/place-order",
-                                    state: {productCount: parseInt(cartCount) + parseInt(newItems)}}} >
+                                    state: {
+                                        productCount: parseInt(cartCount) + parseInt(newItems),
+                                        name: location.state.name,
+                                        author: location.state.author,
+                                        authors: location.state.authors,
+                                        price: location.state.cost2.toFixed(2),
+                                        images: location.state.images
+                                    }}} >
                                 <input value="Buy Now" name="buy-now-button" id="buy-now-button" type="submit"/>
                                 </Link>
                             </div>

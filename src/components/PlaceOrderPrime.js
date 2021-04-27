@@ -174,12 +174,12 @@ export function PlaceOrderPrime({location}){
                     </div>
                     <div id="cart-items-box-inner-columns-wrapper">
                         <div id="cart-items-box-inner-col-1">
-                            <img id="checkout-item-image" name="checkout-item-image" src={checkoutProductImage}></img>
+                            <img id="checkout-item-image" name="checkout-item-image" src={location.state.images[0]}></img>
                         </div>
                         <div id="cart-items-box-inner-col-2">
-                            <span id="place-order-cart-item-title"><strong>System Design Interview - An insider's guide, Second Edition</strong></span>
-                            <span id="place-order-data-id">by Xu, Alex</span>
-                            <span id="place-order-price">$24.99</span>
+                            <span id="place-order-cart-item-title"><strong>{location.state.name}</strong></span>
+                            {location.state.authors ? <span id="place-order-data-id">by {location.state.authors[0]}</span> : <span id="place-order-data-id">by {location.state.author}</span>}
+                            <span id="place-order-price">${location.state.price}</span>
                             <object id="amazon-prime-mini-logo" name="amazon-prime-logo" alt="amazon-prime-logo" src="trans.jpeg"></object>
                             <span id="place-order-free-returns-tooltip" onClick={openTooltip}>
                                 FREE Returns
