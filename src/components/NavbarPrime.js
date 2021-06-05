@@ -100,8 +100,14 @@ export function NavbarPrime({location, productCount=0}){
                             <Link   
                                 to={{
                                 pathname:"/search",
-                                state: {productCount: productCount}
-                                }} 
+                                state: {
+                                    productCount: productCount,
+                                    name: location ? location.state.name : "",
+                                    author: location ? location.state.author : "",
+                                    authors: location ? location.state.authors : "",
+                                    price: location ? location.state.cost2.toFixed(2) : 0.00,
+                                    images: location ? location.state.images : ""
+                                }}}
                                 id="nav-search-submit-button">
                             </Link>
                         </div>

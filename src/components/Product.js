@@ -110,7 +110,7 @@ export function Product({location}){
 
     return(
         <div class="Product">
-            <NavbarPrime productCount = {cartCount}/>
+            <NavbarPrime productCount = {cartCount} location = {location} />
             <section id="upper-product-bar">
                 <a class="upper-product-bar-link" id="upper-product-bar-link-1"><span class="product-bar-link-text">Books</span></a>
                 <a class="upper-product-bar-link">Advanced Search</a>

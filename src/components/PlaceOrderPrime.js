@@ -66,6 +66,7 @@ export function PlaceOrderPrime({location}){
         }
     }
 
+
     const selectOptions = useState([]);
     for(let i = 1; i<=10; i++){
         selectOptions.push( <option value={i}>{i}</option>);
@@ -174,7 +175,8 @@ export function PlaceOrderPrime({location}){
                     </div>
                     <div id="cart-items-box-inner-columns-wrapper">
                         <div id="cart-items-box-inner-col-1">
-                            <img id="checkout-item-image" name="checkout-item-image" src={location.state.images[0]}></img>
+                            {location.state.images ? <img id="checkout-item-image" name="checkout-item-image" src={location.state.images[0]}></img> : ""}
+                           {/*<img id="checkout-item-image" name="checkout-item-image" src={location.state.images[0]}></img>*/}
                         </div>
                         <div id="cart-items-box-inner-col-2">
                             <span id="place-order-cart-item-title"><strong>{location.state.name}</strong></span>

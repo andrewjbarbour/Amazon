@@ -692,6 +692,7 @@ td{
     width: 85px;
     /*height: 90px;*/
     aspect-ratio: width / height;
+    padding-bottom: 40px;
 }
 
 #cart-items-box-inner-col-2{

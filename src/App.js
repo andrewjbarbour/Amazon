@@ -8,6 +8,7 @@ import Product from './components/Product';
 import Payment from './components/Payment';
 import Checkout from './components/Checkout';
 import PlaceOrderPrime from './components/PlaceOrderPrime';
+import OrderHistory from './components/OrderHistory';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/payment" component={Payment} />
           <Route path="/shipping" component = {Checkout} />
           <Route path="/place-order" component = {PlaceOrderPrime} />
+          <Route path="/order-history" component = {OrderHistory} />
         </Switch>
       </div>
     </Router>
