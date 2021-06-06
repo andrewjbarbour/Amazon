@@ -1,0 +1,57 @@
+.Account {
+    font-family: Amazon Ember, Arial, sans-serif;
+    color: #0f1111;
+  }
+
+#main-account-wrapper{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+#main-account-ui-wrapper{
+    display: block;
+    margin-top: -1vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    width: 60vw;
+    height: 100vh;
+}
+
+#main-account-header{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+#top-account-ui-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1.5vw;
+    row-gap: 1.5vw;
+}
+
+.account-cell{
+    width: 317px;
+    height: 102px;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.account-cell-row{
+    margin-left: 5%;
+    height: 66px;
+}
+
+.account-img {
+    width: 23%;
+    margin-right: 2%;
+
+}
+
