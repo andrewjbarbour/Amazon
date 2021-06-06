@@ -245,7 +245,7 @@ export function PlaceOrderPrime({location}){
                                 
                                 <div id="#delivery-option-secondary-block-wrapper">
                                     <span id="delivery-option-secondary-block-header">Or choose your Prime pickup option:</span>
-                                    <span id="delivery-option-secondary-block-content">Pick up at Amazon@DowntownPortland (<a class="delivery-option-link">View Location</a>)</span>
+                                    <span id="delivery-option-secondary-block-content">Pick up at Amazon@DowntownJupiter (<a class="delivery-option-link">View Location</a>)</span>
                                     <br/>
                                     <input id="delivery-option-4" name="delivery-option" type="radio"></input>
                                     <label for="delivery-option-4" name="delivery-option-4-label" id="delivery-option-4-label">{getShippingDay()}</label>

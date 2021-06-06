@@ -49,12 +49,12 @@
     background-image: url("./amazon-front-page-sprite-map.png");
     background-position: -71px -378px;
     margin-top: 24px;
-    margin-left: 12px;
+    margin-left: 6px;
   }
   
   #nav-global-location {
     display: flex;
-    width: 145px;
+    width: 150px;
     border: 1px solid transparent;
   }
   
@@ -81,7 +81,7 @@
   #global-delivery-location {
     display: flex;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 15px;
     font-weight: 700;
   }
