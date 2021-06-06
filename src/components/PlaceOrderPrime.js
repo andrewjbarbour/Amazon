@@ -116,12 +116,12 @@ export function PlaceOrderPrime({location}){
                     <h3 id="place-order-prime-row1-number">1</h3>
                     <h3 id="place-order-prime-shipping-address-header"><strong>Shipping address</strong></h3>
                     <h3 id="place-order-prime-shipping-address">
-                        Andrew Barbour<br/>
-                        248 NE 55th Ave<br/>
-                        Hillsboro, OR 97124<br/>
+                        Lily Magellan<br/>
+                        719 Storm Cloud Way<br/>
+                        Jupiter City, Jupiter 81932<br/>
                         <a id="place-order-prime-add-delivery-instructions">Add delivery instructions</a>
                         <img src={amazonLockerPin} name="amazon-locker-pin" id="amazon-locker-pin" alt="amazon-locker-pin"></img>
-                        <span id="free-pickup">Or FREE Pickup from <a class="free-pickup-link"> Amazon@DowntownPortland </a> or at an <a class="free-pickup-link"> AmazonLocker</a></span>
+                        <span id="free-pickup">Or FREE Pickup from <a class="free-pickup-link"> Amazon@DowntownJupiter </a> or at an <a class="free-pickup-link"> AmazonLocker</a></span>
                     </h3>
                     <h3 id="place-order-prime-change-shipping-address">Change</h3>
                 </section>
@@ -131,7 +131,7 @@ export function PlaceOrderPrime({location}){
                     <h3 id="place-order-prime-payment-method-header"><strong>Payment method</strong></h3>
                     <div id="place-order-prime-payment-method-details">
                         <img id="card-logo" src={visaLogo}></img>
-                        <span id="card-digits"><strong>Visa</strong> &#160;ending in 4392</span>
+                        <span id="card-digits"><strong>Visa</strong> &#160;ending in 9182</span>
                         <span id="place-order-confirm-billing-address">
                             <a id="confirm-billing-address-link">Billing address</a>
                             : Same as shipping address.

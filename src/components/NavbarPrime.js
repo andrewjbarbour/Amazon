@@ -30,8 +30,8 @@ export function NavbarPrime({location, productCount=0}){
                     <div id="nav-global-location">
                         <object name="global-location-sprite" id="global-location-sprite" src="./trans.png"></object>
                         <div id="global-delivery">
-                            <span id="global-delivery-name">Deliver to Andrew</span>
-                            <span id="global-delivery-location">Portland 97124</span>
+                            <span id="global-delivery-name">Hello</span>
+                            <span id="global-delivery-location">Select your address</span>
                         </div>
                     </div>
                     <div id="nav-search-bar">
@@ -118,7 +118,7 @@ export function NavbarPrime({location, productCount=0}){
                     </div>
                     <Link to="/signin" id="signin-link" class="react-router-link">
                     <div id="user-account-nav">
-                        <span id="user-greeting"> Hello, Andrew</span>
+                        <span id="user-greeting"> Hello, Sign In</span>
                         <span id="user-accounts-and-lists">Accounts & Lists            
                             <object name="user-account-nav-dropdown-icon" id="user-account-nav-dropdown-icon" src="./trans.png"></object>
                         </span>                    
@@ -146,7 +146,7 @@ export function NavbarPrime({location, productCount=0}){
                         <object id="sidebar-icon" name="sidebar-icon" alt="sidebar-icon" src="trans.png"></object>
                         <span id="sidebar-description">All</span>
                     </div>
-                    <span id="your-amazon-nav">Andrew's Amazon.com</span>
+                    <span id="your-amazon-nav">Your Amazon.com</span>
                     <span id="customer-service-nav">Customer Service</span>
                     <span id="subscribe-and-save-nav">Subscribe & Save</span>
                     <span id="prime-video-nav">Prime Video</span>

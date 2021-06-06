@@ -343,7 +343,7 @@ export function FrontPage({location}){
                     <div id="row-1-card-1">
                         <img id="fp-profile-icon" name="fp-profile-icon" alt="fp-profile-icon" src={profileIcon}></img>
                         <div id="fp-card-user-greeting">
-                            <h2 class="fp-card-header" id="user-greeting-header">Hi, Andrew</h2>
+                            <h2 class="fp-card-header" id="user-greeting-header">Hello</h2>
                             <span id="customer-since">Customer since 2012</span>
                             <div id="card-1-1-ui-body">
                                 <span id="recent-order-text">Your recent order</span>
