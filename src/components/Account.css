@@ -45,13 +45,34 @@
 }
 
 .account-cell-row{
+    display: flex;
     margin-left: 5%;
     height: 66px;
 }
 
 .account-img {
-    width: 23%;
+    width: 22%;
     margin-right: 2%;
 
 }
 
+.account-row-content-wrapper{
+    display: block;
+    margin-top: -4%;
+}
+
+.account-row-header{
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #111;
+}
+
+.account-row-content{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: -4%;
+    font-weight: 500;
+    color: #565959;
+}

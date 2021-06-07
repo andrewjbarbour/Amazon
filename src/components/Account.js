@@ -15,25 +15,101 @@ export function Account(){
                         <div class="account-cell">
                             <div class="account-cell-row">
                                 <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Your Orders</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
                             </div>
                         </div>
                         <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Login & Security</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Prime</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Gift cards</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Your Payments</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Your Profiles</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Your devices and content</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Your Messages</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Archived orders</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Your Lists</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-cell">
+                            <div class="account-cell-row">
+                                <img class="account-img" src={yourOrders}></img>
+                                <div class="account-row-content-wrapper">
+                                    <h2 class="account-row-header">Your Orders</h2>
+                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
