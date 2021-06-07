@@ -3,6 +3,10 @@ import './Account.css';
 import NavbarPrime from './NavbarPrime';
 import Footer from './Footer'
 import yourOrders from './account-your-orders.png';
+import login from './account-security.png';
+import prime from './account-prime.png';
+import giftcard from './account-gift-card.png';
+
 
 export function Account(){
     return(
@@ -23,7 +27,7 @@ export function Account(){
                         </div>
                         <div class="account-cell">
                             <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
+                                <img class="account-img" src={login}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Login & Security</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
@@ -32,7 +36,7 @@ export function Account(){
                         </div>
                         <div class="account-cell">
                             <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
+                                <img class="account-img" src={prime}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Prime</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
@@ -41,7 +45,7 @@ export function Account(){
                         </div>
                         <div class="account-cell">
                             <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
+                                <img class="account-img" src={giftcard}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Gift cards</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
