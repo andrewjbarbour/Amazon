@@ -6,7 +6,13 @@ import yourOrders from './account-your-orders.png';
 import login from './account-security.png';
 import prime from './account-prime.png';
 import giftcard from './account-gift-card.png';
-
+import orders from './account-your-orders.png';
+import payments from './account-payment.png';
+import profiles from './account-profiles.png';
+import devices from './account-devices.png';
+import messages from './account-messages.jpg';
+import archivedOrders from './account-archived-orders.png';
+import lists from './account-lists.png';
 
 export function Account(){
     return(
@@ -54,7 +60,7 @@ export function Account(){
                         </div>
                         <div class="account-cell">
                             <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
+                                <img class="account-img" src={payments}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Your Payments</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
@@ -63,7 +69,7 @@ export function Account(){
                         </div>
                         <div class="account-cell">
                             <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
+                                <img class="account-img" src={profiles}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Your Profiles</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
@@ -72,7 +78,7 @@ export function Account(){
                         </div>
                         <div class="account-cell">
                             <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
+                                <img class="account-img" src={devices}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Your devices and content</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
@@ -81,7 +87,7 @@ export function Account(){
                         </div>
                         <div class="account-cell">
                             <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
+                                <img class="account-img" src={messages}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Your Messages</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
@@ -90,7 +96,7 @@ export function Account(){
                         </div>
                         <div class="account-cell">
                             <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
+                                <img class="account-img" src={archivedOrders}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Archived orders</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
@@ -99,18 +105,9 @@ export function Account(){
                         </div>
                         <div class="account-cell">
                             <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
+                                <img class="account-img" src={lists}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Your Lists</h2>
-                                    <span class="account-row-content">Track, return, or buy things again</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="account-cell">
-                            <div class="account-cell-row">
-                                <img class="account-img" src={yourOrders}></img>
-                                <div class="account-row-content-wrapper">
-                                    <h2 class="account-row-header">Your Orders</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
                                 </div>
                             </div>
