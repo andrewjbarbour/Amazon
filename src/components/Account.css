@@ -47,13 +47,19 @@
 .account-cell-row{
     display: flex;
     margin-left: 5%;
-    height: 66px;
+    min-height: 66px;
 }
 
 .account-img {
     width: 22%;
     margin-right: 2%;
 
+}
+
+#account-profiles-img{
+    height: 66px;
+    width: 66px;
+    align-self: center;
 }
 
 .account-row-content-wrapper{

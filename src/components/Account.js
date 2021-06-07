@@ -36,7 +36,7 @@ export function Account(){
                                 <img class="account-img" src={login}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Login & Security</h2>
-                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                    <span class="account-row-content">Edit login, name, and mobile number</span>
                                 </div>
                             </div>
                         </div>
@@ -45,34 +45,34 @@ export function Account(){
                                 <img class="account-img" src={prime}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Prime</h2>
-                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                    <span class="account-row-content">View benefits and payment settings</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="account-cell">
+                        <div class="account-cell account-cell-2">
                             <div class="account-cell-row">
                                 <img class="account-img" src={giftcard}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Gift cards</h2>
-                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                    <span class="account-row-content">View balance, redeem, or reload gift cards</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="account-cell">
-                            <div class="account-cell-row">
+                        <div class="account-cell account-cell-2">
+                            <div class="account-cell-row account-cell-row-2">
                                 <img class="account-img" src={payments}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Your Payments</h2>
-                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                    <span class="account-row-content">Manage payment methods and settings, view all transactions</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="account-cell">
+                        <div class="account-cell account-cell-2">
                             <div class="account-cell-row">
-                                <img class="account-img" src={profiles}></img>
+                                <img class="account-img" src={profiles} id="account-profiles-img"></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Your Profiles</h2>
-                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                    <span class="account-row-content">Manage, add, or remove user profiles for personalized experiences</span>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ export function Account(){
                             <div class="account-cell-row">
                                 <img class="account-img" src={devices}></img>
                                 <div class="account-row-content-wrapper">
-                                    <h2 class="account-row-header">Your devices and content</h2>
+                                    <h2 class="account-row-header">Manage your Amazon devices and digital content</h2>
                                     <span class="account-row-content">Track, return, or buy things again</span>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@ export function Account(){
                                 <img class="account-img" src={messages}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Your Messages</h2>
-                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                    <span class="account-row-content">View messages to and from Amazon, sellers, and buyers</span>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@ export function Account(){
                                 <img class="account-img" src={archivedOrders}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Archived orders</h2>
-                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                    <span class="account-row-content">View and manage your archived orders</span>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ export function Account(){
                                 <img class="account-img" src={lists}></img>
                                 <div class="account-row-content-wrapper">
                                     <h2 class="account-row-header">Your Lists</h2>
-                                    <span class="account-row-content">Track, return, or buy things again</span>
+                                    <span class="account-row-content">View, modify, and share your lists, or create new ones</span>
                                 </div>
                             </div>
                         </div>
