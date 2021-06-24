@@ -9,6 +9,7 @@ import Payment from './components/Payment';
 import Checkout from './components/Checkout';
 import PlaceOrderPrime from './components/PlaceOrderPrime';
 import OrderHistory from './components/OrderHistory';
+import Account from './components/Account';
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
           <Route path="/search" component={SearchResults} />
           <Route path="/product" exact component={Product} />
           <Route path="/payment" component={Payment} />
-          <Route path="/shipping" component = {Checkout} />
-          <Route path="/place-order" component = {PlaceOrderPrime} />
-          <Route path="/order-history" component = {OrderHistory} />
+          <Route path="/shipping" component={Checkout} />
+          <Route path="/place-order" component={PlaceOrderPrime} />
+          <Route path="/order-history" component={OrderHistory} />
+          <Route path="/your-account" component={Account} />
         </Switch>
       </div>
     </Router>
