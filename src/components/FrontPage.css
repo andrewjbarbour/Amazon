@@ -581,7 +581,7 @@
 }
 
 .fade-in-carousel:hover div {
-  opacity: 99%;
+  opacity: 1;
   transition: 1s ease-in-out;
 }
 
