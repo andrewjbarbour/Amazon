@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.0778f0db.chunk.css",
-    "main.js": "/static/js/main.9dcf98f4.chunk.js",
-    "main.js.map": "/static/js/main.9dcf98f4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8543b7eb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8543b7eb.js.map",
-    "static/js/2.b8d3ea93.chunk.js": "/static/js/2.b8d3ea93.chunk.js",
-    "static/js/2.b8d3ea93.chunk.js.map": "/static/js/2.b8d3ea93.chunk.js.map",
-    "static/js/3.5a2d34b3.chunk.js": "/static/js/3.5a2d34b3.chunk.js",
-    "static/js/3.5a2d34b3.chunk.js.map": "/static/js/3.5a2d34b3.chunk.js.map",
+    "main.css": "/static/css/main.2030ea57.chunk.css",
+    "main.js": "/static/js/main.267d45b7.chunk.js",
+    "main.js.map": "/static/js/main.267d45b7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.56502d52.js",
+    "runtime-main.js.map": "/static/js/runtime-main.56502d52.js.map",
+    "static/js/2.ffb3aa9a.chunk.js": "/static/js/2.ffb3aa9a.chunk.js",
+    "static/js/2.ffb3aa9a.chunk.js.map": "/static/js/2.ffb3aa9a.chunk.js.map",
+    "static/js/3.43437a8d.chunk.js": "/static/js/3.43437a8d.chunk.js",
+    "static/js/3.43437a8d.chunk.js.map": "/static/js/3.43437a8d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.0778f0db.chunk.css.map": "/static/css/main.0778f0db.chunk.css.map",
-    "static/js/2.b8d3ea93.chunk.js.LICENSE.txt": "/static/js/2.b8d3ea93.chunk.js.LICENSE.txt",
+    "static/css/main.2030ea57.chunk.css.map": "/static/css/main.2030ea57.chunk.css.map",
+    "static/js/2.ffb3aa9a.chunk.js.LICENSE.txt": "/static/js/2.ffb3aa9a.chunk.js.LICENSE.txt",
     "static/media/alexa-image.6e9216a6.png": "/static/media/alexa-image.6e9216a6.png",
     "static/media/alexa-weather-hero.d050f034.jpg": "/static/media/alexa-weather-hero.d050f034.jpg",
     "static/media/NavbarPrime.css": "/static/media/amazon-front-page-sprite-map.7ce4d67e.png",
@@ -63,9 +63,9 @@
     "static/media/warm-up-outside.42564795.jpg": "/static/media/warm-up-outside.42564795.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8543b7eb.js",
-    "static/js/2.b8d3ea93.chunk.js",
-    "static/css/main.0778f0db.chunk.css",
-    "static/js/main.9dcf98f4.chunk.js"
+    "static/js/runtime-main.56502d52.js",
+    "static/js/2.ffb3aa9a.chunk.js",
+    "static/css/main.2030ea57.chunk.css",
+    "static/js/main.267d45b7.chunk.js"
   ]
 }
